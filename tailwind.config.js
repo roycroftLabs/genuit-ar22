@@ -21,14 +21,14 @@ module.exports = {
     fontSize: {
       sm: "0.875rem", //14px
       base: "1rem", //16px
-      md: "1.3125rem", //21px
-      xl: "1.4375rem", //23px
-      "2xl": "2.125rem", //34px
-      "3xl": "2.5rem", //40px
-      "4xl": "3.25rem", //52px
-      "5xl": "4.125rem", //66px
-      "6xl": "4.375rem", //70px
-      "7xl": "5rem", //80px
+      md: "1.25rem", //20px
+      xl: "1.375rem", //22px
+      "2xl": "1.5rem", //24px
+      "3xl": "1.875rem", //30px
+      "4xl": "2rem", //32px
+      "5xl": "2.5rem", //40px
+      "6xl": "2.75rem", //44px
+      "7xl": "3.75rem", //60px
     },
     lineHeight: {
       // leading
@@ -38,28 +38,27 @@ module.exports = {
       normal: "1.4",
       relaxed: "1.5",
     },
+    spacing: {
+      22: "5.5rem",
+    },
     colors: {
-      primary: "#F5F1E9",
-      secondary: "#F0947F",
+      "royal-blue": "#004996",
+      "midnight-purple": "#230A59",
+      "royal-blue-alpha": "rgba(0, 73, 150, 0.9)",
       white: "#fff",
       black: "#111111",
-      charcoal: "#454444",
       grey: {
-        smoke: "#F7F7F7",
+        mist: "rgba(147, 160, 170, 0.1)",
         light: "",
-        medium: "#ADBAC2",
+        mid: "#93A0AA",
         dark: "",
       },
-      "white-veil": "rgba(255,255,255,0.7)",
       transparent: "rgba(255,255,255,0)",
-      alphas: {},
-      gradients: {},
-      error: "red",
-      success: "green",
     },
     extend: {
       backgroundImage: {
-        hero: "url('images/hero.png')",
+        // path starts from location of global.css
+        hero: "url(../images/hero_background.jpg)",
       },
       gridTemplateColumns: {},
       gridTemplateRows: {},

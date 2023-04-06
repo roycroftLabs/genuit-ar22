@@ -7,14 +7,14 @@
 
 import * as React from "react"
 
-import Header from "./header"
+import Header from "../common/Header"
 
-const Layout = ({ children }) => {
+const Layout = ({ siteTitle, children }) => {
   return (
     <>
-      <Header siteTitle="Title" />
+      <Header siteTitle={siteTitle} />
       <main>{children}</main>
-      <footer>© {new Date().getFullYear()} &middot;</footer>
+      <footer>© {new Date().getFullYear()}</footer>
     </>
   )
 }

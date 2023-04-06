@@ -6,9 +6,9 @@
 
 module.exports = {
   siteMetadata: {
-    title: `Gatsby & Tailwind Starter`,
-    description: ``,
-    author: `Roycroft Labs`,
+    title: `Annual Review 2022`,
+    description: `Genuit Group's Annual Review 2022`,
+    author: `Roycroft Labs for Luminous`,
     siteUrl: `https://www.roycroft-labs.com/`,
   },
   plugins: [
@@ -42,8 +42,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-tailwind-starter`,
-        short_name: `starter`,
+        name: `Genuit Annual Review 2022`,
+        short_name: `Genuit AR22`,
         start_url: `/`,
         background_color: `#fff`,
         // This will impact how browsers show your PWA/website

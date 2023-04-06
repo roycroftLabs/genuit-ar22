@@ -2,8 +2,12 @@ import * as React from "react"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 
-import Layout from "../components/layout"
-import Seo from "../components/seo"
+import Layout from "../components/common/Layout"
+import Seo from "../components/common/Seo"
+
+import Hero from "../components/blocks/Hero"
+
+import data from "../data/homepage.json"
 
 const links = [
   {
@@ -33,16 +37,8 @@ const links = [
 ]
 
 const Homepage = () => (
-  <Layout>
-    <div className="">
-      <StaticImage
-        src="../images/hero_background.jpg"
-        loading="eager"
-        alt="hero background"
-      />
-      <h1 className="text-3xl font-bold underline">New Gatsby template</h1>
-      <p className=""></p>
-    </div>
+  <Layout siteTitle={data.header.title}>
+    <Hero content={data.hero} />
   </Layout>
 )
 
@@ -51,6 +47,6 @@ const Homepage = () => (
  *
  * See: https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-head/
  */
-export const Head = () => <Seo title="Home" />
+export const Head = () => <Seo title="Genuit Group" />
 
 export default Homepage
