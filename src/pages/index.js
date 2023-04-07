@@ -8,12 +8,14 @@ import FinancialHighlights from "../components/blocks/FinancialHighlights"
 import InvestmentProposition from "../components/blocks/InvestmentProposition"
 
 import data from "../data/homepage.json"
+import Banner from "../components/blocks/Banner"
 
 const Homepage = () => (
   <Layout siteTitle={data.header.title}>
     <Hero content={data.hero} />
     <FinancialHighlights content={data.financialHighlights} />
     <InvestmentProposition content={data.investmentProposition} />
+    <Banner content={data.sustainableBusiness} />
   </Layout>
 )
 

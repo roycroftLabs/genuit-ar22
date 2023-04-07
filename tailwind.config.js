@@ -71,6 +71,8 @@ module.exports = {
       backgroundImage: {
         // path starts from location of global.css
         hero: "url(../images/hero_background.jpg)",
+        "banner-sustainable":
+          "url(../images/carousel/Sustainability-banner.jpg)",
       },
       gridTemplateColumns: {},
       gridTemplateRows: {},
