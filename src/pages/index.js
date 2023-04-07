@@ -5,6 +5,7 @@ import Seo from "../components/common/Seo"
 
 import Hero from "../components/blocks/Hero"
 import FinancialHighlights from "../components/blocks/FinancialHighlights"
+import InvestmentProposition from "../components/blocks/InvestmentProposition"
 
 import data from "../data/homepage.json"
 
@@ -12,6 +13,7 @@ const Homepage = () => (
   <Layout siteTitle={data.header.title}>
     <Hero content={data.hero} />
     <FinancialHighlights content={data.financialHighlights} />
+    <InvestmentProposition content={data.investmentProposition} />
   </Layout>
 )
 

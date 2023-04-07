@@ -6,3 +6,44 @@
 @import "@fontsource/poppins/500.css";
 @import "@fontsource/poppins/600.css";
 @import "@fontsource/poppins/700.css";
+
+.box {
+  /*white fill*/
+  background: #fff;
+  clip-path: polygon(
+    100% 0,
+    0 0,
+    0 100%,
+    100% 0,
+    0 0,
+    0 0,
+    1px 1px,
+    1px 100%,
+    calc(100% - 80px - 1px) 100%,
+    100% calc(100% - 80px),
+    100% 1px,
+    1px 1px
+  );
+}
+
+.box:before {
+  /*outline*/
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #230a59;
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% calc(100% - 80px),
+    calc(100% - 80px) 100%,
+    0 100%,
+    0 0,
+    1px 1px,
+    1px calc(100% - 1px),
+    calc(100% - 80px - 1px) calc(100% - 1px),
+    calc(100% - 1px) calc(100% - 80px - 1px),
+    calc(100% - 1px) 1px,
+    1px 1px
+  );
+}
