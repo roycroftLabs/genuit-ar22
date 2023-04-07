@@ -20,7 +20,7 @@ function Download({ label, theme = "light", className }) {
         <path
           d="M16.864 5.364 10.5 11.728 4.136 5.364"
           stroke="currentColor"
-          stroke-width="2"
+          strokeWidth="2"
         />
       </svg>
 

@@ -71,23 +71,28 @@
       "list": [
         {
           "heading": "Customers",
-          "description": "Quality and innovative products, engineered solutions that enable a sustainable built environment, support, value, range, bespoke solutions, market leading brands."
+          "description": "Quality and innovative products, engineered solutions that enable a sustainable built environment, support, value, range, bespoke solutions, market leading brands.",
+          "icon": "Customers"
         },
         {
           "heading": "Shareholders",
-          "description": "Dividend, capital growth opportunity, responsible and ethical investment."
+          "description": "Dividend, capital growth opportunity, responsible and ethical investment.",
+          "icon": "Shareholders"
         },
         {
           "heading": "Employees",
-          "description": "Training and skills development, commitment to diversity, direct engagement and empowerment, providing a chance to make a difference."
+          "description": "Training and skills development, commitment to diversity, direct engagement and empowerment, providing a chance to make a difference.",
+          "icon": "Employees"
         },
         {
           "heading": "Suppliers",
-          "description": "Long-standing relationships, fair negotiation, certainty on payment, reputation, visibility on revenues."
+          "description": "Long-standing relationships, fair negotiation, certainty on payment, reputation, visibility on revenues.",
+          "icon": "Suppliers"
         },
         {
           "heading": "Communities and the environment",
-          "description": "Working towards a sustainable built environment, sustainable products and practices, enhancing the environment, while engaging with communities and charities."
+          "description": "Working towards a sustainable built environment, sustainable products and practices, enhancing the environment, while engaging with communities and charities.",
+          "icon": "Communities"
         }
       ]
     },

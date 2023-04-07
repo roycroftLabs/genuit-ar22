@@ -7,6 +7,28 @@ import Paragraph from "../common/Paragraph"
 import Section from "../common/Section"
 import Download from "../common/Download"
 
+import Customers from "../../images/icons/icon-customer.svg"
+import Shareholders from "../../images/icons/icon-shareholders.svg"
+import Employees from "../../images/icons/icon-employees.svg"
+import Suppliers from "../../images/icons/icon-suppliers.svg"
+import Communities from "../../images/icons/icon-communitiesenvironment.svg"
+
+const renderIcon = name => {
+  switch (name) {
+    case "Customers":
+    default:
+      return <img src={Customers} alt={name} className="w-20" />
+    case "Shareholders":
+      return <img src={Shareholders} alt={name} className="w-20" />
+    case "Employees":
+      return <img src={Employees} alt={name} className="w-20" />
+    case "Suppliers":
+      return <img src={Suppliers} alt={name} className="w-20" />
+    case "Communities":
+      return <img src={Communities} alt={name} className="w-20" />
+  }
+}
+
 function BusinessModel({ content }) {
   return (
     <Section heading={content.heading} subHeading={content.subHeading}>
@@ -17,7 +39,7 @@ function BusinessModel({ content }) {
         <div className="flex gap-6 mb-20">
           {content.ourResources.list.map((item, i) => {
             return (
-              <div className="flex flex-col">
+              <div key={i} className="flex flex-col">
                 <Heading level="h4" className="uppercase">
                   {item.heading}
                 </Heading>
@@ -40,7 +62,8 @@ function BusinessModel({ content }) {
         <div className="grid grid-cols-3 gap-6 mb-20">
           {content.stakeholderValue.list.map((item, i) => {
             return (
-              <div className="flex flex-col">
+              <div key={i} className="flex flex-col">
+                {renderIcon(item.icon)}
                 <Heading level="h4" className="">
                   {item.heading}
                 </Heading>
