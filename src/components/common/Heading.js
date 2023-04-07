@@ -31,7 +31,7 @@ function Heading({ children, level, colour = "royal-blue", className }) {
       return (
         <h3
           className={cx(
-            "font-poppins font-regular text-xl md:text-5xl",
+            "font-poppins font-regular text-xl md:text-4xl",
             `text-${colour}`,
             `${className}`
           )}

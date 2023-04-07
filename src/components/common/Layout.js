@@ -13,7 +13,7 @@ const Layout = ({ siteTitle, children }) => {
   return (
     <>
       <Header siteTitle={siteTitle} />
-      <main>{children}</main>
+      <main className="bg-grey-mist">{children}</main>
       <footer>© {new Date().getFullYear()}</footer>
     </>
   )

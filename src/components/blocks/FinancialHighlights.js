@@ -6,7 +6,7 @@ import Chart1 from "../../images/bar-charts/Genuit_Highlight_Increase_in_net_deb
 
 function FinancialHighlights({ content }) {
   return (
-    <Section className="bg-grey-mist py-40" heading={content.heading}>
+    <Section heading={content.heading}>
       <div className="flex gap-6 w-full">
         {content.slides.map((slide, index) => {
           return (

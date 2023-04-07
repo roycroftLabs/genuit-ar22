@@ -1,4 +1,6 @@
 import React from "react"
+import cx from "classnames"
+
 import Heading from "./Heading"
 
 function Section({ heading, subHeading, children, className }) {
@@ -6,11 +8,15 @@ function Section({ heading, subHeading, children, className }) {
     <section className={`pt-40 pb-20 ${className}`}>
       <div className="container flex flex-col items-center">
         <div className="pb-20">
-          <Heading colour="black" className={subHeading && `pb-6`}>
+          <Heading
+            level="h3"
+            colour="black"
+            className={cx("text-center", subHeading && `pb-6`)}
+          >
             {heading}
           </Heading>
           {subHeading && (
-            <Heading level="h5" className="">
+            <Heading level="h5" className="text-center">
               {subHeading}
             </Heading>
           )}
