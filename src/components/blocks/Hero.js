@@ -2,9 +2,7 @@ import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 
 import Heading from "../common/Heading"
-import Paragraph from "../common/Paragraph"
-
-import DownloadIcon from "../../images/icons/icon-download.svg"
+import Download from "../common/Download"
 
 function Hero({ content }) {
   return (
@@ -17,23 +15,13 @@ function Hero({ content }) {
         >
           {content.heading}
         </Heading>
-        <div className="thumbnail-download w-2/12 flex flex-col items-end self-start pt-20 z-10">
+        <div className="w-1/2 sm:w-4/12 lg:w-3/12 xl:w-2/12 flex flex-col items-end self-start pt-20 z-10">
           <StaticImage
             src="../../images/thumbnails/report-download-thumbnail.jpg"
             alt="Cover of Annual Report"
             className="mb-3"
           />
-          <div className="flex">
-            <img
-              alt="download icon"
-              src={DownloadIcon}
-              className="w-6 h-6 mr-2"
-            />
-
-            <Paragraph size="small" colour="white" className="underline pr-10">
-              {content.downloadLabel}
-            </Paragraph>
-          </div>
+          <Download label={content.downloadLabel} theme="light" />
         </div>
       </div>
       <svg className="absolute bottom-0 left-0 md:left-[-100px] md:bottom-[-200px] lg:left-[-170px] lg:bottom-[-270px] w-[320px] h-[320px] md:w-[520px] md:h-[520px] lg:w-[720px] lg:h-[720px] mix-blend-hard-light rotate-45">
