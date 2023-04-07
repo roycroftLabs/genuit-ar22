@@ -38,5 +38,59 @@
   "sustainableBusiness": {
     "heading": "Making the built environment more sustainable",
     "subHeading": "Genuit Group is making the built environment more sustainable and helping create a more resilient planet, society and business."
+  },
+  "businessModel": {
+    "heading": "Business model",
+    "subHeading": "Our purpose is to address the challenges caused by climate change and urbanisation by providing water and climate management solutions. We’re helping construction build better.",
+    "ourResources": {
+      "heading": "Our resources",
+      "list": [
+        {
+          "heading": "People",
+          "description": "Experts knowledgeable on our customers’ applications and empowered to act."
+        },
+        {
+          "heading": "IP/Expertise",
+          "description": "Innovation, continuous improvement and unique IP defends our market positions."
+        },
+        {
+          "heading": "STRONG LEADERSHIP",
+          "description": "Clear direction and focused resource allocation enables our colleagues to deliver our strategic vision."
+        },
+        {
+          "heading": "CAPITAL INVESTMENT",
+          "description": "Disciplined capital allocation to fund sustainable profitable growth, consistent with our strategic objectives."
+        }
+      ]
+    },
+    "creatingValue": {
+      "heading": "How we create value"
+    },
+    "stakeholderValue": {
+      "heading": "CREATING SUSTAINABLE VALUE FOR OUR STAKEHOLDERS",
+      "list": [
+        {
+          "heading": "Customers",
+          "description": "Quality and innovative products, engineered solutions that enable a sustainable built environment, support, value, range, bespoke solutions, market leading brands."
+        },
+        {
+          "heading": "Shareholders",
+          "description": "Dividend, capital growth opportunity, responsible and ethical investment."
+        },
+        {
+          "heading": "Employees",
+          "description": "Training and skills development, commitment to diversity, direct engagement and empowerment, providing a chance to make a difference."
+        },
+        {
+          "heading": "Suppliers",
+          "description": "Long-standing relationships, fair negotiation, certainty on payment, reputation, visibility on revenues."
+        },
+        {
+          "heading": "Communities and the environment",
+          "description": "Working towards a sustainable built environment, sustainable products and practices, enhancing the environment, while engaging with communities and charities."
+        }
+      ]
+    },
+    "downloadLabel": "Download full Business model"
   }
 }

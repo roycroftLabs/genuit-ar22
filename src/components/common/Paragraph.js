@@ -8,7 +8,7 @@ function Paragraph({ children, size, colour = "black", className }) {
       return (
         <p
           className={cx(
-            "font-poppins font-regular text-base md:text-md",
+            "font-poppins font-regular antialiased text-base md:text-md",
             `text-${colour}`,
             `${className}`
           )}
@@ -20,7 +20,7 @@ function Paragraph({ children, size, colour = "black", className }) {
       return (
         <p
           className={cx(
-            "font-poppins font-semibold text-sm",
+            "font-poppins font-semibold antialiased text-sm",
             `text-${colour}`,
             `${className}`
           )}
