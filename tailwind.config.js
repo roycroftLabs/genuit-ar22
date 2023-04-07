@@ -2,7 +2,6 @@
 module.exports = {
   content: [
     "./src/pages/**/*.{js,jsx,ts,tsx}",
-    "./src/templates/*.{js,jsx,ts,tsx}",
     "./src/components/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
@@ -17,6 +16,12 @@ module.exports = {
     },
     fontFamily: {
       poppins: ['"Poppins"', "Arial", "sans-serif"],
+    },
+    fontWeight: {
+      regular: "400",
+      medium: "500",
+      semibold: "600",
+      bold: "700",
     },
     fontSize: {
       sm: "0.875rem", //14px
@@ -38,9 +43,6 @@ module.exports = {
       normal: "1.4",
       relaxed: "1.5",
     },
-    spacing: {
-      22: "5.5rem",
-    },
     colors: {
       "royal-blue": "#004996",
       "midnight-purple": "#230A59",
@@ -56,6 +58,9 @@ module.exports = {
       transparent: "rgba(255,255,255,0)",
     },
     extend: {
+      spacing: {
+        22: "5.5rem",
+      },
       backgroundImage: {
         // path starts from location of global.css
         hero: "url(../images/hero_background.jpg)",
@@ -66,6 +71,13 @@ module.exports = {
   },
   plugins: [
     // require("@tailwindcss/forms")
+  ],
+  safelist: [
+    "text-white",
+    "text-royal-blue",
+    "text-royal-blue-alpha",
+    "text-midnight-purple",
+    "text-grey-mid",
   ],
 }
 
