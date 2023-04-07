@@ -3,6 +3,36 @@
     "title": "Annual Report & Accounts 2022"
   },
   "hero": {
-    "heading": "A culture of sustainable innovation"
+    "heading": "A culture of sustainable innovation",
+    "downloadLabel": "Download Annual Report 2022 PDF"
+  },
+  "financialHighlights": {
+    "heading": "Financial Highlights",
+    "slides": [
+      {
+        "heading": "Revenue",
+        "unit": "£m",
+        "figure": "£622.2m",
+        "yearOnYear": "+4.7%"
+      },
+      {
+        "heading": "Underlying Operating Profit",
+        "unit": "£m",
+        "figure": "£98.2m",
+        "yearOnYear": "+3.0%"
+      }
+    ]
+  },
+  "investmentProposition": {
+    "heading": "Investment proposition",
+    "subHeading": "Long-term sustainability",
+    "offering": [
+      "Market leadership",
+      "Genuit Business System, focused on maximising growth, lean thinking, and leadership behaviours",
+      "Innovation levels which drive profitability",
+      "Sustainability is at the heart of everything we do, with medium and long-term targets driving our decisions and focus",
+      "Disciplined M&A as an enabler of accelerated growth",
+      "Resilient financial performance through the cycle with high levels of cash conversion"
+    ]
   }
 }
