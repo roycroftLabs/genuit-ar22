@@ -13,7 +13,7 @@ function Hero({ content }) {
         <Heading
           level="h1"
           colour="white"
-          className="w-1/3 z-10 relative self-end leading-tight"
+          className="w-1/3 z-10 relative self-end"
         >
           {content.heading}
         </Heading>

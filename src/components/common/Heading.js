@@ -7,7 +7,7 @@ function Heading({ children, level, colour = "royal-blue", className }) {
       return (
         <h1
           className={cx(
-            "font-poppins font-regular text-5xl md:text-7xl",
+            "font-poppins font-regular antialiased text-5xl md:text-6xl lg:text-7xl leading-tight",
             `text-${colour}`,
             `${className}`
           )}
@@ -19,7 +19,7 @@ function Heading({ children, level, colour = "royal-blue", className }) {
       return (
         <h2
           className={cx(
-            "font-poppins font-regular text-3xl md:text-6xl",
+            "font-poppins font-regular antialiased text-3xl md:text-5xl lg:text-6xl leading-tight",
             `text-${colour}`,
             `${className}`
           )}
@@ -31,7 +31,7 @@ function Heading({ children, level, colour = "royal-blue", className }) {
       return (
         <h3
           className={cx(
-            "font-poppins font-regular text-xl md:text-4xl",
+            "font-poppins font-regular antialiased text-xl md:text-3xl lg:text-4xl leading-snug",
             `text-${colour}`,
             `${className}`
           )}
@@ -43,7 +43,7 @@ function Heading({ children, level, colour = "royal-blue", className }) {
       return (
         <h4
           className={cx(
-            "font-poppins font-bold text-base md:text-2xl leading-tight",
+            "font-poppins font-bold antialiased text-base md:text-2xl leading-snug",
             `text-${colour}`,
             `${className}`
           )}
@@ -56,7 +56,7 @@ function Heading({ children, level, colour = "royal-blue", className }) {
       return (
         <h5
           className={cx(
-            "font-poppins font-medium text-base md:text-2xl",
+            "font-poppins font-medium antialiased text-base md:text-2xl",
             `text-${colour}`,
             `${className}`
           )}

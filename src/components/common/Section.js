@@ -5,7 +5,7 @@ import Heading from "./Heading"
 
 function Section({ heading, subHeading, children, className }) {
   return (
-    <section className={`pt-40 pb-20 ${className}`}>
+    <section className={`pt-40 pb-20 ${className ? className : ""}`}>
       <div className="container flex flex-col items-center">
         <div className="pb-20">
           <Heading

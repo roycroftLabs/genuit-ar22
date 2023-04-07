@@ -14,7 +14,7 @@ function FinancialHighlights({ content }) {
               key={index}
               className="w-1/2 border-2 border-royal-blue bg-white p-6"
             >
-              <Heading level="h3" className="uppercase">
+              <Heading level="h4" className="uppercase">
                 {slide.heading}
               </Heading>
               <Heading level="h5" className="mb-8">
