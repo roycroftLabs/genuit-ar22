@@ -3,15 +3,25 @@ import Heading from "../common/Heading"
 
 import QuoteMarks from "../../images/icons/icon-quote-marks.svg"
 
-function Banner({ content, slider = false, onClickForward, onClickBack }) {
+function Banner({
+  content,
+  slider = false,
+  onClickForward,
+  onClickBack,
+  hide,
+}) {
   return (
     <section
-      className={`bg-royal-blue ${content.background} bg-no-repeat bg-cover overflow-hidden h-[450px] md:h-[550px] lg:h-[680px] py-4 md:py-10 relative transition-all`}
+      className={`bg-royal-blue ${
+        content.background
+      } bg-no-repeat bg-cover overflow-hidden w-full h-full py-4 md:py-10 absolute top-0 left-0 transition-all duration-300 ${
+        hide && `opacity-0`
+      }`}
     >
       {slider && (
         <>
           <div
-            className="absolute left-10 top-[50%] text-royal-blue hover:text-orange z-20 transition-colors cursor-pointer"
+            className="absolute left-10 top-[50%] -translate-y-2/4 text-royal-blue hover:text-orange z-20 transition-colors cursor-pointer"
             onClick={onClickBack}
           >
             <svg width="40" height="40" xmlns="http://www.w3.org/2000/svg">
@@ -26,7 +36,7 @@ function Banner({ content, slider = false, onClickForward, onClickBack }) {
             </svg>
           </div>
           <div
-            className="absolute right-10 top-[50%] text-royal-blue hover:text-orange z-20 transition-colors cursor-pointer"
+            className="absolute right-10 top-[50%] -translate-y-2/4 text-royal-blue hover:text-orange z-20 transition-colors cursor-pointer"
             onClick={onClickForward}
           >
             <svg width="41" height="40" xmlns="http://www.w3.org/2000/svg">

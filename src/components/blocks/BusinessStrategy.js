@@ -1,12 +1,12 @@
 import React, { useState } from "react"
+
 import Section from "../common/Section"
 import Download from "../common/Download"
-
 import Banner from "../common/Banner"
 
 function BusinessStrategy({ content }) {
   const [activeSlide, setActiveSlide] = useState(0)
-  console.log("activeSlide", activeSlide)
+
   return (
     <>
       <Section
@@ -14,20 +14,28 @@ function BusinessStrategy({ content }) {
         subHeading={content.subHeading}
         fullWidth
       >
-        <Banner
-          content={content.slides[activeSlide]}
-          slider
-          onClickForward={() =>
-            activeSlide < content.slides.length - 1
-              ? setActiveSlide(activeSlide + 1)
-              : setActiveSlide(0)
-          }
-          onClickBack={() =>
-            activeSlide === 0
-              ? setActiveSlide(content.slides.length - 1)
-              : setActiveSlide(activeSlide - 1)
-          }
-        />
+        <div className="relative w-full h-[450px] md:h-[550px] lg:h-[680px]">
+          {content.slides.map((slide, i) => {
+            return (
+              <Banner
+                content={slide}
+                slider
+                hide={i !== activeSlide}
+                onClickForward={() =>
+                  activeSlide < content.slides.length - 1
+                    ? setActiveSlide(activeSlide + 1)
+                    : setActiveSlide(0)
+                }
+                onClickBack={() =>
+                  activeSlide === 0
+                    ? setActiveSlide(content.slides.length - 1)
+                    : setActiveSlide(activeSlide - 1)
+                }
+              />
+            )
+          })}
+        </div>
+
         <div className="container">
           <Download
             label={content.downloadLabel}
