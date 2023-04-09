@@ -86,15 +86,17 @@ module.exports = {
       gridTemplateRows: {},
     },
   },
-  plugins: [
-    // require("@tailwindcss/forms")
-  ],
   safelist: [
     "text-white",
     "text-royal-blue",
     "text-royal-blue-alpha",
     "text-midnight-purple",
     "text-grey-mid",
+    "bg-banner-sustainable",
+    "bg-banner-talent",
+    "bg-banner-water",
+    "bg-banner-carbon",
+    "bg-banner-climate",
   ],
 }
 
