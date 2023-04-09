@@ -10,6 +10,7 @@ import InvestmentProposition from "../components/blocks/InvestmentProposition"
 import data from "../data/homepage.json"
 import Banner from "../components/blocks/Banner"
 import BusinessModel from "../components/blocks/BusinessModel"
+import BusinessStrategy from "../components/blocks/BusinessStrategy"
 
 const Homepage = () => (
   <Layout siteTitle={data.header.title}>
@@ -18,6 +19,7 @@ const Homepage = () => (
     <InvestmentProposition content={data.investmentProposition} />
     <Banner content={data.sustainableBusiness} />
     <BusinessModel content={data.businessModel} />
+    <BusinessStrategy content={data.businessStrategy} />
   </Layout>
 )
 

@@ -3,7 +3,13 @@ import cx from "classnames"
 
 import Heading from "./Heading"
 
-function Section({ heading, subHeading, children, className }) {
+function Section({
+  heading,
+  subHeading,
+  children,
+  className,
+  fullWidth = false,
+}) {
   return (
     <section
       className={`pt-40 pb-20 leading-snug ${className ? className : ""}`}
@@ -23,8 +29,8 @@ function Section({ heading, subHeading, children, className }) {
             </Heading>
           )}
         </div>
-        {children}
       </div>
+      <div className={cx(fullWidth ? "w-full" : "container")}>{children}</div>
     </section>
   )
 }

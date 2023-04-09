@@ -73,7 +73,7 @@ function BusinessModel({ content }) {
           })}
         </div>
         <div className="flex justify-center mb-20">
-          <Download label={content.downloadLabel} theme="dark" className="" />
+          <Download label={content.downloadLabel} theme="dark" />
         </div>
       </CutCornerBox>
     </Section>

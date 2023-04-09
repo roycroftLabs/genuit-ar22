@@ -37,7 +37,8 @@
   },
   "sustainableBusiness": {
     "heading": "Making the built environment more sustainable",
-    "subHeading": "Genuit Group is making the built environment more sustainable and helping create a more resilient planet, society and business."
+    "subHeading": "Genuit Group is making the built environment more sustainable and helping create a more resilient planet, society and business.",
+    "background": "bg-banner-sustainable"
   },
   "businessModel": {
     "heading": "Business model",
@@ -97,5 +98,39 @@
       ]
     },
     "downloadLabel": "Download full Business model"
+  },
+  "businessStrategy": {
+    "heading": "Business Strategy",
+    "subHeading": "Our Sustainable Solutions for Growth strategy builds on our successful history, market positions and the deep knowledge and expertise of our people, whilst seeking to clarify how we will outperform the wider market and unlock value from within the Group.",
+    "slides": [
+      {
+        "eyebrow": "Climate Management Solutions",
+        "heading": "Lower carbon heating and cooling",
+        "quote": {
+          "statement": "With our presence in both water and air based climate management technology, Genuit is uniquely placed to offer the solutions for the future of low carbon heating and cooling.",
+          "author": "Matthew Webber, MD, Climate Management Solutions"
+        },
+        "background": "bg-banner-climate"
+      },
+      {
+        "eyebrow": "Water Management Solutions",
+        "heading": "Enabling adaptation and resilience",
+        "quote": {
+          "statement": "The impact of climate change on the need to accommodate extreme weather events is clear. We are committed to designing solutions which address that need, and in doing so also provide for higher quality urban spaces. Our significant usage of recyclate also means that we are minimising our own impact upon the climate",
+          "author": "Steve Durdant-Hollamby, MD, Water Management Solutions"
+        },
+        "background": "bg-banner-water"
+      },
+      {
+        "eyebrow": "Sustainable Building Solutions",
+        "heading": "Driving out carbon",
+        "quote": {
+          "statement": "With our leading brand positions, we are well placed to help our customers reduce their carbon impact. We are committed to an innovation programme which will build on the progress we have already made",
+          "author": "Steve Currier, MD, Sustainable Building Solutions"
+        },
+        "background": "bg-banner-carbon"
+      }
+    ],
+    "downloadLabel": "Download Our Strategy"
   }
 }

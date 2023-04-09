@@ -5,10 +5,14 @@ import Paragraph from "../common/Paragraph"
 
 function Download({ label, theme = "light", className }) {
   return (
-    <div className={`flex max-w-[184px] ${className ? className : ""}`}>
+    <div
+      className={`flex max-w-[184px] cursor-pointer ${
+        className ? className : ""
+      }`}
+    >
       <svg
         className={cx(
-          "w-10 h-10 mr-2",
+          "w-10 h-10 mr-2 hover:text-orange",
           theme === "dark" ? "text-royal-blue" : "text-white"
         )}
         width="21"

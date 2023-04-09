@@ -54,6 +54,7 @@ module.exports = {
       "royal-blue": "#004996",
       "midnight-purple": "#230A59",
       "royal-blue-alpha": "rgba(0, 73, 150, 0.9)",
+      orange: "#FFA644",
       white: "#fff",
       black: "#111111",
       grey: {
@@ -72,7 +73,14 @@ module.exports = {
         // path starts from location of global.css
         hero: "url(../images/hero_background.jpg)",
         "banner-sustainable":
-          "url(../images/carousel/Sustainability-banner.jpg)",
+          "url(../images/carousel/sustainable-buildings-banner.jpg)",
+        "banner-talent":
+          "url(../images/carousel/celebrating-talent-banner.jpg)",
+        "banner-water": "url(../images/carousel/water-management-banner.jpg)",
+        "banner-carbon":
+          "url(../images/carousel/driving-out-carbon-banner.jpg)",
+        "banner-climate":
+          "url(../images/carousel/climate-management-banner.jpg)",
       },
       gridTemplateColumns: {},
       gridTemplateRows: {},

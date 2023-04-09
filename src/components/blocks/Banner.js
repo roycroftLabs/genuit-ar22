@@ -1,24 +1,62 @@
 import React from "react"
 import Heading from "../common/Heading"
 
+import QuoteMarks from "../../images/icons/icon-quote-marks.svg"
+
 function Banner({ content }) {
   return (
-    <section className="bg-royal-blue bg-banner-sustainable bg-no-repeat bg-cover overflow-hidden h-[450px] md:h-[550px] lg:h-[680px] py-4 md:py-10 relative">
+    <section
+      className={`bg-royal-blue ${content.background} bg-no-repeat bg-cover overflow-hidden h-[450px] md:h-[550px] lg:h-[680px] py-4 md:py-10 relative`}
+    >
       <div className="container flex flex-col justify-between h-full relative z-10">
-        <Heading
-          level="h1"
-          colour="white"
-          className="w-full sm:w-10/12 md:w-8/12 lg:w-6/12"
-        >
-          {content.heading}
-        </Heading>
-        <Heading
-          level="h4"
-          colour="white"
-          className="w-full sm:w-10/12 md:w-8/12 lg:w-6/12"
-        >
-          {content.subHeading}
-        </Heading>
+        <div>
+          {content.eyebrow && (
+            <Heading
+              level="h4"
+              colour="white"
+              className="w-full sm:w-12/12 md:w-8/12 lg:w-6/12 mb-2"
+            >
+              {content.eyebrow}
+            </Heading>
+          )}
+          <Heading
+            level="h1"
+            colour="white"
+            className="w-full sm:w-10/12 md:w-8/12 lg:w-6/12"
+          >
+            {content.heading}
+          </Heading>
+        </div>
+        <div>
+          {content.subHeading && (
+            <Heading
+              level="h4"
+              colour="white"
+              className="w-full sm:w-10/12 md:w-8/12 lg:w-6/12"
+            >
+              {content.subHeading}
+            </Heading>
+          )}
+          {content.quote && (
+            <>
+              <img src={QuoteMarks} className="w-12 mb-4" />
+              <Heading
+                level="h4"
+                colour="white"
+                className="w-full sm:w-10/12 md:w-8/12 lg:w-6/12 mb-4"
+              >
+                {content.quote.statement}
+              </Heading>
+              <Heading
+                level="h5"
+                colour="white"
+                className="w-full sm:w-10/12 md:w-8/12 lg:w-6/12"
+              >
+                {content.quote.author}
+              </Heading>
+            </>
+          )}
+        </div>
       </div>
       <svg
         className="absolute 
