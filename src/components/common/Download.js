@@ -31,7 +31,7 @@ function Download({ label, theme = "light", className }) {
       <Paragraph
         size="small"
         colour={theme === "dark" ? "midnight-purple" : "white"}
-        className="underline md:pr-4 lg:pr-10"
+        className="underline md:pr-4 lg:pr-6"
       >
         {label}
       </Paragraph>

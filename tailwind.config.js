@@ -97,6 +97,12 @@ module.exports = {
     "bg-banner-water",
     "bg-banner-carbon",
     "bg-banner-climate",
+    "row-start-0",
+    "row-start-1",
+    "row-start-2",
+    "row-start-3",
+    "row-start-4",
+    "row-start-5",
   ],
 }
 

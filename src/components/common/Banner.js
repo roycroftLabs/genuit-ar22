@@ -1,7 +1,8 @@
 import React from "react"
-import Heading from "../common/Heading"
+import cx from "classnames"
 
-import QuoteMarks from "../../images/icons/icon-quote-marks.svg"
+import Heading from "../common/Heading"
+import QuoteMarks from "../common/icons/QuoteMarks.js"
 
 function Banner({
   content,
@@ -12,11 +13,13 @@ function Banner({
 }) {
   return (
     <section
-      className={`bg-royal-blue ${
-        content.background
-      } bg-no-repeat bg-cover overflow-hidden w-full h-full py-4 md:py-10 absolute top-0 left-0 transition-all duration-300 ${
-        hide && `opacity-0`
-      }`}
+      className={cx(
+        "bg-royal-blue bg-no-repeat bg-cover overflow-hidden w-full h-full py-4 md:py-10 ",
+        content.background,
+        !slider && "relative h-[450px] md:h-[550px] lg:h-[680px]",
+        slider && "absolute top-0 left-0 transition-all duration-300",
+        hide && "opacity-0"
+      )}
     >
       {slider && (
         <>
@@ -83,7 +86,9 @@ function Banner({
           )}
           {content.quote && (
             <>
-              <img src={QuoteMarks} className="w-12 mb-4" />
+              <div className="w-12 mb-4 text-white">
+                <QuoteMarks />
+              </div>
               <Heading
                 level="h4"
                 colour="white"

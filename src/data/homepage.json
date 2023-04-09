@@ -132,5 +132,31 @@
       }
     ],
     "downloadLabel": "Download Our Strategy"
+  },
+  "leadershipStatements": {
+    "heading": "Leadership statements",
+    "statements": [
+      {
+        "heading": "Creating a better built environment",
+        "image": "chairman",
+        "quote": "Sustainability continues to be at the heart of our growth agenda",
+        "author": "Kevin Boyd, Independent Non-Executive Chair",
+        "downloadLabel": "Download Chair's statement"
+      },
+      {
+        "heading": "Our Results: Progress in the face of challenge",
+        "image": "CEO",
+        "quote": "Robust financial performance achieved in a year of considerable macro economic and political uncertainty with continued levels of high inflation and constraints in supply chain",
+        "author": "Joe Vorih, Chief Executive Officer",
+        "downloadLabel": "Download CEO's statement"
+      },
+      {
+        "heading": "A strong performance despite uncertainty",
+        "image": "CFO",
+        "quote": "The Group continues to experience a strong performance despite macroeconomic and political uncertainty, ongoing high inflation and supply constraints",
+        "author": "Paul James, Chief Financial Officer",
+        "downloadLabel": "Download Financial review"
+      }
+    ]
   }
 }
