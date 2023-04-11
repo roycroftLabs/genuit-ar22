@@ -161,5 +161,17 @@
         "downloadLabel": "Download Financial review"
       }
     ]
+  },
+  "ourPeople": {
+    "heading": "Our People",
+    "subHeading": "The delivery of our Sustainable Solutions for Growth strategy is underpinned by the continuous focus on people, to create value and enable growth through employee capability, expertise and contribution. We continue to invest in developing our workforce, through the strengthening of our strategic people programmes and development opportunities and enhancing our focus on diversity and inclusion.",
+    "banner": {
+      "heading": "Celebrating our talent",
+      "quote": {
+        "statement": "I’ve always aspired to have a challenging and interesting career, so after studying engineering in secondary school I knew it was the right direction for me",
+        "author": "Bethany Borley-Stow, a Senior Team Leader and engineer"
+      },
+      "background": "bg-banner-talent"
+    }
   }
 }

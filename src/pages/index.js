@@ -12,6 +12,7 @@ import BusinessStrategy from "../components/blocks/BusinessStrategy"
 
 import data from "../data/homepage.json"
 import LeadershipStatements from "../components/blocks/LeadershipStatements"
+import OurPeople from "../components/blocks/OurPeople"
 
 const Homepage = () => (
   <Layout siteTitle={data.header.title}>
@@ -22,6 +23,7 @@ const Homepage = () => (
     <BusinessModel content={data.businessModel} />
     <BusinessStrategy content={data.businessStrategy} />
     <LeadershipStatements content={data.leadershipStatements} />
+    <OurPeople content={data.ourPeople} />
   </Layout>
 )
 

@@ -26,7 +26,7 @@ const renderImage = name => {
 function LeadershipStatements({ content }) {
   return (
     <Section heading={content.heading}>
-      <div className="grid grid-cols-2 grid-rows-4 gap-x-40">
+      <div className="grid grid-cols-2 gap-x-40">
         {content.statements.map((statement, i) => {
           const odd = i % 2 !== 0
           return (
@@ -40,11 +40,6 @@ function LeadershipStatements({ content }) {
               >
                 <Heading level="h2">{statement.heading}</Heading>
                 {renderImage(statement.image)}
-                {/* <img
-                  src={Chairman}
-                  alt={statement.author}
-                  className="mb-3 mt-4"
-                /> */}
               </div>
               <div
                 className={cx(
