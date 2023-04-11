@@ -10,12 +10,14 @@ function Banner({
   onClickForward,
   onClickBack,
   hide,
+  bgOnly = false,
+  children,
 }) {
   return (
     <section
       className={cx(
         "bg-royal-blue bg-no-repeat bg-cover overflow-hidden w-full h-full py-4 md:py-10 ",
-        content.background,
+        content?.background && content.background,
         !slider && "relative h-[450px] md:h-[550px] lg:h-[680px]",
         slider && "absolute top-0 left-0 transition-all duration-300",
         hide && "opacity-0"
@@ -56,56 +58,64 @@ function Banner({
         </>
       )}
       <div className="container flex flex-col justify-between h-full relative z-10">
-        <div>
-          {content.eyebrow && (
-            <Heading
-              level="h4"
-              colour="white"
-              className="w-full sm:w-12/12 md:w-8/12 lg:w-6/12 mb-2"
-            >
-              {content.eyebrow}
-            </Heading>
-          )}
-          <Heading
-            level="h1"
-            colour="white"
-            className="w-full sm:w-10/12 md:w-8/12 lg:w-6/12 xl:w-5/12"
-          >
-            {content.heading}
-          </Heading>
-        </div>
-        <div>
-          {content.subHeading && (
-            <Heading
-              level="h4"
-              colour="white"
-              className="w-full sm:w-10/12 md:w-8/12 lg:w-6/12"
-            >
-              {content.subHeading}
-            </Heading>
-          )}
-          {content.quote && (
-            <>
-              <div className="w-12 mb-4 text-white">
-                <QuoteMarks />
-              </div>
-              <Heading
-                level="h4"
-                colour="white"
-                className="w-full sm:w-10/12 md:w-8/12 lg:w-6/12 mb-4"
-              >
-                {content.quote.statement}
-              </Heading>
-              <Heading
-                level="h5"
-                colour="white"
-                className="w-full sm:w-10/12 md:w-8/12 lg:w-6/12"
-              >
-                {content.quote.author}
-              </Heading>
-            </>
-          )}
-        </div>
+        {bgOnly ? (
+          children
+        ) : (
+          <>
+            <div>
+              {content.eyebrow && (
+                <Heading
+                  level="h4"
+                  colour="white"
+                  className="w-full sm:w-12/12 md:w-8/12 lg:w-6/12 mb-2"
+                >
+                  {content.eyebrow}
+                </Heading>
+              )}
+              {content.heading && (
+                <Heading
+                  level="h1"
+                  colour="white"
+                  className="w-full sm:w-10/12 md:w-8/12 lg:w-6/12 xl:w-5/12"
+                >
+                  {content.heading}
+                </Heading>
+              )}
+            </div>
+            <div>
+              {content.subHeading && (
+                <Heading
+                  level="h4"
+                  colour="white"
+                  className="w-full sm:w-10/12 md:w-8/12 lg:w-6/12"
+                >
+                  {content.subHeading}
+                </Heading>
+              )}
+              {content.quote && (
+                <>
+                  <div className="w-12 mb-4 text-white">
+                    <QuoteMarks />
+                  </div>
+                  <Heading
+                    level="h4"
+                    colour="white"
+                    className="w-full sm:w-10/12 md:w-8/12 lg:w-6/12 mb-4"
+                  >
+                    {content.quote.statement}
+                  </Heading>
+                  <Heading
+                    level="h5"
+                    colour="white"
+                    className="w-full sm:w-10/12 md:w-8/12 lg:w-6/12"
+                  >
+                    {content.quote.author}
+                  </Heading>
+                </>
+              )}
+            </div>
+          </>
+        )}
       </div>
       <svg
         className="absolute 

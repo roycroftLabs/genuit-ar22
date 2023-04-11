@@ -8,13 +8,16 @@
 import * as React from "react"
 
 import Header from "../common/Header"
+import Footer from "./Footer"
 
-const Layout = ({ siteTitle, children }) => {
+import data from "../../data/common.json"
+
+const Layout = ({ children }) => {
   return (
     <>
-      <Header siteTitle={siteTitle} />
+      <Header content={data.header} />
       <main className="bg-grey-mist">{children}</main>
-      <footer>© {new Date().getFullYear()}</footer>
+      <Footer content={data.footer} />
     </>
   )
 }

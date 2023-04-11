@@ -9,13 +9,13 @@ import FinancialHighlights from "../components/blocks/FinancialHighlights"
 import InvestmentProposition from "../components/blocks/InvestmentProposition"
 import BusinessModel from "../components/blocks/BusinessModel"
 import BusinessStrategy from "../components/blocks/BusinessStrategy"
-
-import data from "../data/homepage.json"
 import LeadershipStatements from "../components/blocks/LeadershipStatements"
 import OurPeople from "../components/blocks/OurPeople"
 
+import data from "../data/homepage.json"
+
 const Homepage = () => (
-  <Layout siteTitle={data.header.title}>
+  <Layout>
     <Hero content={data.hero} />
     <FinancialHighlights content={data.financialHighlights} />
     <InvestmentProposition content={data.investmentProposition} />

@@ -1,0 +1,36 @@
+{
+  "header": {
+    "title": "Annual Report & Accounts 2022"
+  },
+  "footer": {
+    "heading": "Download report",
+    "reports": [
+      {
+        "category": "Full report",
+        "files": [
+          {
+            "title": "Annual Report & Accounts 2022 PDF",
+            "file": "../documents/sample-download.pdf"
+          }
+        ]
+      },
+      {
+        "category": "Sections",
+        "files": [
+          {
+            "title": "Strategic Report PDF",
+            "file": "../documents/sample-download.pdf"
+          },
+          {
+            "title": "Corporate Governance PDF",
+            "file": "../documents/sample-download.pdf"
+          },
+          {
+            "title": "Financial Statements PDF",
+            "file": "../documents/sample-download.pdf"
+          }
+        ]
+      }
+    ]
+  }
+}
