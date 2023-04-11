@@ -52,14 +52,17 @@ function LeadershipStatements({ content }) {
                   odd ? "col-start-2" : "col-start-1"
                 )}
               >
-                <div className="w-12 mb-1 text-royal-blue">
+                <div className="w-12 mt-3 mb-1 text-royal-blue">
                   <QuoteMarks />
                 </div>
                 <Heading level="h3" className="mb-4">
                   {statement.quote}
                 </Heading>
+                <Heading level="h5" className="">
+                  {statement.author},
+                </Heading>
                 <Heading level="h5" className="mb-6">
-                  {statement.author}
+                  {statement.jobTitle}
                 </Heading>
                 <Download label={statement.downloadLabel} theme="dark" />
               </div>
