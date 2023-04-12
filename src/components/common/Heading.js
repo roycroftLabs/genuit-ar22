@@ -9,7 +9,7 @@ function Heading({ children, level, colour = "royal-blue", className }) {
           className={cx(
             "font-poppins font-regular antialiased text-5xl md:text-6xl lg:text-7xl leading-tight",
             `text-${colour}`,
-            `${className}`
+            className && className
           )}
         >
           {children}
@@ -21,7 +21,7 @@ function Heading({ children, level, colour = "royal-blue", className }) {
           className={cx(
             "font-poppins font-regular antialiased text-3xl md:text-5xl lg:text-6xl leading-tight",
             `text-${colour}`,
-            `${className}`
+            className && className
           )}
         >
           {children}
@@ -33,7 +33,7 @@ function Heading({ children, level, colour = "royal-blue", className }) {
           className={cx(
             "font-poppins font-regular antialiased text-xl md:text-3xl lg:text-4xl leading-snug",
             `text-${colour}`,
-            `${className}`
+            className && className
           )}
         >
           {children}
@@ -45,7 +45,7 @@ function Heading({ children, level, colour = "royal-blue", className }) {
           className={cx(
             "font-poppins font-bold antialiased text-base md:text-2xl leading-snug",
             `text-${colour}`,
-            `${className}`
+            className && className
           )}
         >
           {children}
@@ -58,7 +58,7 @@ function Heading({ children, level, colour = "royal-blue", className }) {
           className={cx(
             "font-poppins font-medium antialiased text-base md:text-2xl",
             `text-${colour}`,
-            `${className}`
+            className && className
           )}
         >
           {children}

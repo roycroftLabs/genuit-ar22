@@ -69,6 +69,9 @@ module.exports = {
       spacing: {
         22: "5.5rem",
       },
+      dropShadow: {
+        black: "8px 8px 16px #000000",
+      },
       backgroundImage: {
         // path starts from location of global.css
         hero: "url(../images/hero_background.jpg)",

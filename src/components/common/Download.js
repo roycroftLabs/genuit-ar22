@@ -3,30 +3,33 @@ import cx from "classnames"
 
 import Paragraph from "../common/Paragraph"
 
-function Download({ label, theme = "light", className }) {
+function Download({ label, filePath = null, theme = "light", className }) {
   return (
-    <div
-      className={`flex max-w-[184px] cursor-pointer ${
+    <a
+      download={filePath}
+      className={`block flex max-w-[200px] cursor-pointer ${
         className ? className : ""
       }`}
     >
-      <svg
-        className={cx(
-          "w-10 h-10 mr-2 hover:text-orange",
-          theme === "dark" ? "text-royal-blue" : "text-white"
-        )}
-        width="21"
-        height="21"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path fill="currentColor" d="M3 16h15v2H3z" />
-        <path
-          d="M16.864 5.364 10.5 11.728 4.136 5.364"
-          stroke="currentColor"
-          strokeWidth="2"
-        />
-      </svg>
+      <div className="mr-4">
+        <svg
+          className={cx(
+            "w-5 h-5  hover:text-orange",
+            theme === "dark" ? "text-royal-blue" : "text-white"
+          )}
+          width="21"
+          height="21"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path fill="currentColor" d="M3 16h15v2H3z" />
+          <path
+            d="M16.864 5.364 10.5 11.728 4.136 5.364"
+            stroke="currentColor"
+            strokeWidth="2"
+          />
+        </svg>
+      </div>
 
       <Paragraph
         size="small"
@@ -35,7 +38,7 @@ function Download({ label, theme = "light", className }) {
       >
         {label}
       </Paragraph>
-    </div>
+    </a>
   )
 }
 

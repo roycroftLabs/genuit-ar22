@@ -19,15 +19,15 @@
         "files": [
           {
             "title": "Strategic Report PDF",
-            "file": "../documents/sample-download.pdf"
+            "path": "/src/documents/sample-download.pdf"
           },
           {
             "title": "Corporate Governance PDF",
-            "file": "../documents/sample-download.pdf"
+            "path": "/src/documents/sample-download.pdf"
           },
           {
             "title": "Financial Statements PDF",
-            "file": "../documents/sample-download.pdf"
+            "path": "/src/documents/sample-download.pdf"
           }
         ]
       }
