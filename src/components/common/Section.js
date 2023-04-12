@@ -9,27 +9,34 @@ function Section({
   children,
   className,
   fullWidth = false,
+  noBottomSpace = false,
 }) {
   return (
     <section
-      className={`pt-40 pb-20 leading-snug ${className ? className : ""}`}
+      className={cx(
+        "pt-20 leading-snug",
+        !noBottomSpace && "pb-20",
+        className ? className : ""
+      )}
     >
-      <div className="container flex flex-col items-center">
-        <div className="md:w-8/12 pb-20">
-          <Heading
-            level="h3"
-            colour="black"
-            className={cx("text-center", subHeading && `pb-6`)}
-          >
-            {heading}
-          </Heading>
-          {subHeading && (
-            <Heading level="h5" className="text-center">
-              {subHeading}
+      {heading && (
+        <div className="container flex flex-col items-center">
+          <div className="md:w-8/12 pb-20">
+            <Heading
+              level="h3"
+              colour="black"
+              className={cx("text-center", subHeading && `pb-6`)}
+            >
+              {heading}
             </Heading>
-          )}
+            {subHeading && (
+              <Heading level="h5" className="text-center">
+                {subHeading}
+              </Heading>
+            )}
+          </div>
         </div>
-      </div>
+      )}
       <div className={cx(fullWidth ? "w-full" : "container")}>{children}</div>
     </section>
   )

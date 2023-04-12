@@ -57,64 +57,66 @@ function Banner({
           </div>
         </>
       )}
-      <div className="container flex flex-col justify-between h-full relative z-10">
+      <div className="relative z-10 h-full">
         {bgOnly ? (
           children
         ) : (
-          <>
-            <div>
-              {content.eyebrow && (
-                <Heading
-                  level="h4"
-                  colour="white"
-                  className="w-full sm:w-12/12 md:w-8/12 lg:w-6/12 mb-2"
-                >
-                  {content.eyebrow}
-                </Heading>
-              )}
-              {content.heading && (
-                <Heading
-                  level="h1"
-                  colour="white"
-                  className="w-full sm:w-10/12 md:w-8/12 lg:w-6/12 xl:w-5/12"
-                >
-                  {content.heading}
-                </Heading>
-              )}
-            </div>
-            <div>
-              {content.subHeading && (
-                <Heading
-                  level="h4"
-                  colour="white"
-                  className="w-full sm:w-10/12 md:w-8/12 lg:w-6/12"
-                >
-                  {content.subHeading}
-                </Heading>
-              )}
-              {content.quote && (
-                <>
-                  <div className="w-12 mb-4 text-white">
-                    <QuoteMarks />
-                  </div>
+          <div className="container flex flex-col justify-between h-full">
+            <>
+              <div>
+                {content.eyebrow && (
                   <Heading
                     level="h4"
                     colour="white"
-                    className="w-full sm:w-10/12 md:w-8/12 lg:w-6/12 mb-4"
+                    className="w-full sm:w-12/12 md:w-8/12 lg:w-6/12 mb-2"
                   >
-                    {content.quote.statement}
+                    {content.eyebrow}
                   </Heading>
+                )}
+                {content.heading && (
                   <Heading
-                    level="h5"
+                    level="h1"
+                    colour="white"
+                    className="w-full sm:w-10/12 md:w-8/12 lg:w-6/12 xl:w-5/12"
+                  >
+                    {content.heading}
+                  </Heading>
+                )}
+              </div>
+              <div>
+                {content.subHeading && (
+                  <Heading
+                    level="h4"
                     colour="white"
                     className="w-full sm:w-10/12 md:w-8/12 lg:w-6/12"
                   >
-                    {content.quote.author}
+                    {content.subHeading}
                   </Heading>
-                </>
-              )}
-            </div>
-          </>
+                )}
+                {content.quote && (
+                  <>
+                    <div className="w-12 mb-4 text-white">
+                      <QuoteMarks />
+                    </div>
+                    <Heading
+                      level="h4"
+                      colour="white"
+                      className="w-full sm:w-10/12 md:w-8/12 lg:w-6/12 mb-4"
+                    >
+                      {content.quote.statement}
+                    </Heading>
+                    <Heading
+                      level="h5"
+                      colour="white"
+                      className="w-full sm:w-10/12 md:w-8/12 lg:w-6/12"
+                    >
+                      {content.quote.author}
+                    </Heading>
+                  </>
+                )}
+              </div>
+            </>
+          </div>
         )}
       </div>
       <svg

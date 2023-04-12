@@ -25,7 +25,7 @@ const renderImage = name => {
 }
 function LeadershipStatements({ content }) {
   return (
-    <Section heading={content.heading}>
+    <Section heading={content.heading} noBottomSpace>
       <div className="grid grid-cols-2 gap-x-40">
         {content.statements.map((statement, i) => {
           const odd = i % 2 !== 0

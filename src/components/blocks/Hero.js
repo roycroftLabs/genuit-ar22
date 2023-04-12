@@ -6,7 +6,7 @@ import Download from "../common/Download"
 
 function Hero({ content }) {
   return (
-    <section className="relative w-full h-[810px] bg-royal-blue bg-hero bg-no-repeat bg-cover overflow-hidden">
+    <section className="relative w-full h-[810px] bg-royal-blue bg-hero bg-no-repeat bg-cover overflow-hidden mb-20">
       <div className="container flex justify-between items-stretch h-full py-10">
         <Heading
           level="h1"

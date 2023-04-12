@@ -8,6 +8,7 @@ function OurPeople({ content }) {
       heading={content.heading}
       subHeading={content.subHeading}
       fullWidth
+      noBottomSpace
     >
       <Banner content={content.banner} />
     </Section>
