@@ -103,7 +103,7 @@ module.exports = {
     "row-start-0",
     "row-start-1",
     "row-start-2",
-    "lg:row-start-3",
+    "xl:row-start-3",
     "row-start-4",
     "row-start-5",
   ],

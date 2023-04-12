@@ -26,18 +26,18 @@ const renderImage = name => {
 function LeadershipStatements({ content }) {
   return (
     <Section heading={content.heading} noBottomSpace>
-      <div className="grid lg:grid-cols-2 lg:gap-x-20 xl:gap-x-40">
+      <div className="grid xl:grid-cols-2 xl:gap-x-40">
         {content.statements.map((statement, i) => {
           const odd = i % 2 !== 0
           return (
             <>
               <div
                 className={cx(
-                  "row-span-1 col-span-1 md:w-4/5 lg:w-full",
+                  "row-span-1 col-span-1 md:w-4/5 lg:w-3/5 xl:w-full",
                   odd
-                    ? "lg:col-start-2 md:justify-self-end lg:justify-self-auto"
-                    : "lg:col-start-1",
-                  !odd ? `lg:row-start-${i + 1}` : ""
+                    ? "xl:col-start-2 md:justify-self-end xl:justify-self-auto"
+                    : "xl:col-start-1",
+                  !odd ? `xl:row-start-${i + 1}` : ""
                 )}
               >
                 <Heading level="h2" className="md:pt-8">
@@ -47,10 +47,10 @@ function LeadershipStatements({ content }) {
               </div>
               <div
                 className={cx(
-                  "row-span-1 col-span-1 md:w-4/5 lg:w-full mb-20 last:mb-10 lg:mb-0",
+                  "row-span-1 col-span-1 md:w-4/5 lg:w-3/5 xl:w-full mb-20 md:mb-10 last:mb-10 xl:mb-0",
                   odd
-                    ? "lg:col-start-2 md:justify-self-end lg:justify-self-auto"
-                    : "lg:col-start-1"
+                    ? "xl:col-start-2 md:justify-self-end xl:justify-self-auto"
+                    : "xl:col-start-1"
                 )}
               >
                 <div className="w-12 mt-3 mb-1 text-royal-blue">
