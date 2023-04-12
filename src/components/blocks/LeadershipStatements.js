@@ -59,7 +59,11 @@ function LeadershipStatements({ content }) {
                 <Heading level="h5" className="mb-6">
                   {statement.jobTitle}
                 </Heading>
-                <Download label={statement.downloadLabel} theme="dark" />
+                <Download
+                  label={statement.download.label}
+                  fileName={statement.download.name}
+                  theme="dark"
+                />
               </div>
             </>
           )

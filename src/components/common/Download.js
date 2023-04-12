@@ -1,13 +1,36 @@
 import React from "react"
+import PropTypes from "prop-types"
 import cx from "classnames"
 
 import Paragraph from "../common/Paragraph"
 
-function Download({ label, filePath = null, theme = "light", className }) {
+import samplePDF from "../../documents/sample-download.pdf"
+
+const getFile = name => {
+  switch (name) {
+    case "full-report":
+    default:
+      return samplePDF
+    case "strategic":
+      return samplePDF
+    case "governance":
+      return samplePDF
+    case "financial":
+      return samplePDF
+    case "chair-statement":
+      return samplePDF
+    case "ceo-statement":
+      return samplePDF
+  }
+}
+
+function Download({ label, fileName, theme = "light", className }) {
   return (
     <a
-      download={filePath}
-      className={`block flex max-w-[200px] cursor-pointer ${
+      href={getFile(fileName)}
+      target="_blank"
+      rel="noreferrer"
+      className={`flex max-w-[200px] cursor-pointer ${
         className ? className : ""
       }`}
     >
@@ -43,3 +66,12 @@ function Download({ label, filePath = null, theme = "light", className }) {
 }
 
 export default Download
+
+Download.propTypes = {
+  fileName: PropTypes.oneOf([
+    "full-report",
+    "strategic",
+    "governance",
+    "financial",
+  ]),
+}

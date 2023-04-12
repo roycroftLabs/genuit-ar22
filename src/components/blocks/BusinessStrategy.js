@@ -38,7 +38,8 @@ function BusinessStrategy({ content }) {
 
         <div className="container">
           <Download
-            label={content.downloadLabel}
+            label={content.download.label}
+            fileName={content.download.name}
             theme="dark"
             className="mt-8"
           />

@@ -21,7 +21,11 @@ function Hero({ content }) {
             alt="Cover of Annual Report"
             className="mb-3"
           />
-          <Download label={content.downloadLabel} theme="light" />
+          <Download
+            label={content.download.label}
+            fileName={content.download.name}
+            theme="light"
+          />
         </div>
       </div>
       <svg className="absolute bottom-0 left-0 md:left-[-100px] md:bottom-[-200px] lg:left-[-170px] lg:bottom-[-270px] w-[320px] h-[320px] md:w-[520px] md:h-[520px] lg:w-[720px] lg:h-[720px] mix-blend-hard-light rotate-45">

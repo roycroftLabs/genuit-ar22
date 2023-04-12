@@ -1,7 +1,10 @@
 {
   "hero": {
     "heading": "A culture of sustainable innovation",
-    "downloadLabel": "Download Annual Report 2022 PDF"
+    "download": {
+      "label": "Download Annual Report 2022 PDF",
+      "name": "full-report"
+    }
   },
   "financialHighlights": {
     "heading": "Financial Highlights",
@@ -94,7 +97,10 @@
         }
       ]
     },
-    "downloadLabel": "Download full Business model"
+    "download": {
+      "label": "Download full Business model",
+      "name": "strategy"
+    }
   },
   "businessStrategy": {
     "heading": "Our Strategy",
@@ -128,7 +134,10 @@
         "background": "bg-banner-carbon"
       }
     ],
-    "downloadLabel": "Download Our Strategy"
+    "download": {
+      "label": "Download Our Strategy",
+      "name": "strategy"
+    }
   },
   "leadershipStatements": {
     "heading": "Leadership statements",
@@ -139,7 +148,10 @@
         "quote": "Sustainability continues to be at the heart of our growth agenda",
         "author": "Kevin Boyd",
         "jobTitle": "Independent Non-Executive Chair",
-        "downloadLabel": "Download Chair's statement"
+        "download": {
+          "label": "Download Chair's statement",
+          "name": "chair-statement"
+        }
       },
       {
         "heading": "Our Results: Progress in the face of challenge",
@@ -147,7 +159,10 @@
         "quote": "Robust financial performance achieved in a year of considerable macro economic and political uncertainty with continued levels of high inflation and constraints in supply chain",
         "author": "Joe Vorih",
         "jobTitle": "Chief Executive Officer",
-        "downloadLabel": "Download CEO's statement"
+        "download": {
+          "label": "Download CEO's statement",
+          "name": "ceo-statement"
+        }
       },
       {
         "heading": "A strong performance despite uncertainty",
@@ -155,7 +170,10 @@
         "quote": "The Group continues to experience a strong performance despite macroeconomic and political uncertainty, ongoing high inflation and supply constraints",
         "author": "Paul James",
         "jobTitle": "Chief Financial Officer",
-        "downloadLabel": "Download Financial review"
+        "download": {
+          "label": "Download Financial review",
+          "name": "financial"
+        }
       }
     ]
   },

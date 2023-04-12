@@ -10,7 +10,7 @@
         "files": [
           {
             "title": "Annual Report & Accounts 2022 PDF",
-            "file": "../documents/sample-download.pdf"
+            "name": "full-report"
           }
         ]
       },
@@ -19,15 +19,15 @@
         "files": [
           {
             "title": "Strategic Report PDF",
-            "path": "/src/documents/sample-download.pdf"
+            "name": "strategic"
           },
           {
             "title": "Corporate Governance PDF",
-            "path": "/src/documents/sample-download.pdf"
+            "name": "governance"
           },
           {
             "title": "Financial Statements PDF",
-            "path": "/src/documents/sample-download.pdf"
+            "name": "financial"
           }
         ]
       }
