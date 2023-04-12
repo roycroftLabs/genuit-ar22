@@ -40,7 +40,7 @@ function BusinessModel({ content }) {
           {content.ourResources.list.map((item, i) => {
             return (
               <div key={i} className="flex flex-col">
-                <Heading level="h4" className="uppercase">
+                <Heading level="h4" className="uppercase pb-1">
                   {item.heading}
                 </Heading>
                 <Paragraph>{item.description}</Paragraph>
@@ -66,7 +66,7 @@ function BusinessModel({ content }) {
             return (
               <div key={i} className="flex flex-col">
                 {renderIcon(item.icon)}
-                <Heading level="h4" className="">
+                <Heading level="h4" className="pb-1">
                   {item.heading}
                 </Heading>
                 <Paragraph>{item.description}</Paragraph>
