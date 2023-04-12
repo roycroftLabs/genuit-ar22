@@ -7,7 +7,7 @@ function Heading({ children, level, colour = "royal-blue", className }) {
       return (
         <h1
           className={cx(
-            "font-poppins font-regular antialiased text-5xl md:text-6xl lg:text-7xl leading-tight",
+            "font-poppins font-regular antialiased text-5xl sm:text-6xl lg:text-7xl leading-tight",
             `text-${colour}`,
             className && className
           )}
@@ -19,7 +19,7 @@ function Heading({ children, level, colour = "royal-blue", className }) {
       return (
         <h2
           className={cx(
-            "font-poppins font-regular antialiased text-3xl md:text-5xl lg:text-6xl leading-tight",
+            "font-poppins font-regular antialiased text-3xl md:text-5xl xl:text-6xl leading-tight",
             `text-${colour}`,
             className && className
           )}

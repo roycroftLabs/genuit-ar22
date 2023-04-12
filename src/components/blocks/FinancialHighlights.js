@@ -7,12 +7,12 @@ import Chart1 from "../../images/bar-charts/Genuit_Highlight_Increase_in_net_deb
 function FinancialHighlights({ content }) {
   return (
     <Section heading={content.heading}>
-      <div className="flex gap-6 w-full">
+      <div className="flex flex-col gap-6 w-full">
         {content.slides.map((slide, index) => {
           return (
             <div
               key={index}
-              className="w-1/2 border-2 border-royal-blue bg-white p-6"
+              className="w-full md:w-1/2 border-2 border-royal-blue bg-white p-6"
             >
               <Heading level="h4" className="uppercase">
                 {slide.heading}

@@ -11,22 +11,25 @@ function Banner({
   onClickBack,
   hide,
   bgOnly = false,
+  fullHeight = false,
   children,
 }) {
   return (
     <section
       className={cx(
-        "bg-royal-blue bg-no-repeat bg-cover overflow-hidden w-full h-full py-4 md:py-10 ",
+        "bg-royal-blue bg-no-repeat bg-cover overflow-hidden w-full  py-4 md:py-10 bg-center",
         content?.background && content.background,
         !slider && "relative h-[450px] md:h-[550px] lg:h-[680px]",
-        slider && "absolute top-0 left-0 transition-all duration-300",
-        hide && "opacity-0"
+        slider &&
+          "absolute top-0 left-0 h-full first-letter:transition-all duration-300",
+        hide && "opacity-0",
+        fullHeight && "h-full"
       )}
     >
       {slider && (
         <>
           <div
-            className="absolute left-10 top-[50%] -translate-y-2/4 text-royal-blue hover:text-orange z-20 transition-colors cursor-pointer"
+            className="hidden md:block absolute left-10 top-[50%] -translate-y-2/4 text-royal-blue hover:text-orange z-20 transition-colors cursor-pointer"
             onClick={onClickBack}
           >
             <svg width="40" height="40" xmlns="http://www.w3.org/2000/svg">
@@ -41,7 +44,7 @@ function Banner({
             </svg>
           </div>
           <div
-            className="absolute right-10 top-[50%] -translate-y-2/4 text-royal-blue hover:text-orange z-20 transition-colors cursor-pointer"
+            className="hidden md:block absolute right-10 top-[50%] -translate-y-2/4 text-royal-blue hover:text-orange z-20 transition-colors cursor-pointer"
             onClick={onClickForward}
           >
             <svg width="41" height="40" xmlns="http://www.w3.org/2000/svg">
@@ -101,7 +104,7 @@ function Banner({
                     <Heading
                       level="h4"
                       colour="white"
-                      className="w-full sm:w-10/12 md:w-8/12 lg:w-6/12 mb-4"
+                      className="w-full sm:w-10/12 lg:w-6/12 mb-4"
                     >
                       {content.quote.statement}
                     </Heading>

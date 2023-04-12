@@ -26,25 +26,31 @@ const renderImage = name => {
 function LeadershipStatements({ content }) {
   return (
     <Section heading={content.heading} noBottomSpace>
-      <div className="grid grid-cols-2 gap-x-40">
+      <div className="grid lg:grid-cols-2 lg:gap-x-20 xl:gap-x-40">
         {content.statements.map((statement, i) => {
           const odd = i % 2 !== 0
           return (
             <>
               <div
                 className={cx(
-                  "row-span-1 col-span-1",
-                  odd ? "col-start-2" : "col-start-1",
-                  !odd ? `row-start-${i + 1}` : ""
+                  "row-span-1 col-span-1 md:w-4/5 lg:w-full",
+                  odd
+                    ? "lg:col-start-2 md:justify-self-end lg:justify-self-auto"
+                    : "lg:col-start-1",
+                  !odd ? `lg:row-start-${i + 1}` : ""
                 )}
               >
-                <Heading level="h2">{statement.heading}</Heading>
+                <Heading level="h2" className="md:pt-8">
+                  {statement.heading}
+                </Heading>
                 {renderImage(statement.image)}
               </div>
               <div
                 className={cx(
-                  "row-span-1 col-span-1",
-                  odd ? "col-start-2" : "col-start-1"
+                  "row-span-1 col-span-1 md:w-4/5 lg:w-full mb-20 last:mb-10 lg:mb-0",
+                  odd
+                    ? "lg:col-start-2 md:justify-self-end lg:justify-self-auto"
+                    : "lg:col-start-1"
                 )}
               >
                 <div className="w-12 mt-3 mb-1 text-royal-blue">

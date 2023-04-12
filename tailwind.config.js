@@ -15,7 +15,7 @@ module.exports = {
     container: {
       center: true,
       padding: {
-        DEFAULT: "2rem",
+        DEFAULT: "1rem",
         sm: "1.5rem",
         md: "2rem",
         lg: "2rem",
@@ -103,7 +103,7 @@ module.exports = {
     "row-start-0",
     "row-start-1",
     "row-start-2",
-    "row-start-3",
+    "lg:row-start-3",
     "row-start-4",
     "row-start-5",
   ],

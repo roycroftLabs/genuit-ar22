@@ -35,7 +35,7 @@ function Download({ label, fileName, theme = "light", className }) {
         className ? className : ""
       }`}
     >
-      <div className="mr-4">
+      <div className="mr-2 sm:mr-4">
         <svg
           className={cx(
             "w-5 h-5  hover:text-orange",

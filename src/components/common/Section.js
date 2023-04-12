@@ -14,18 +14,18 @@ function Section({
   return (
     <section
       className={cx(
-        "pt-20 leading-snug",
-        !noBottomSpace && "pb-20",
+        "pt-10 sm:pt-14 md:pt-16 lg:pt-20 leading-snug",
+        !noBottomSpace && "pb-10 sm:pb-14 md:pb-16 lg:pb-20",
         className ? className : ""
       )}
     >
       {heading && (
         <div className="container flex flex-col items-center">
-          <div className="md:w-8/12 pb-20">
+          <div className="md:w-8/12 pb-10 sm:pb-14 md:pb-16 lg:pb-20">
             <Heading
               level="h3"
               colour="black"
-              className={cx("text-center", subHeading && `pb-6`)}
+              className={cx("text-center", subHeading && `pb-4 md:pb-6`)}
             >
               {heading}
             </Heading>
