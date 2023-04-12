@@ -51,11 +51,13 @@ function BusinessModel({ content }) {
         <Heading level="h4" className="uppercase pb-10" colour="black">
           {content.creatingValue.heading}
         </Heading>
-        <StaticImage
-          src="../../images/circular-diagram_business-model.png"
-          alt="Diagram representing a sustainable business model"
-          className="w-full md:w-10/12 lg:w-1/2 block mx-auto mb-20"
-        />
+        <div className="w-full md:w-10/12 lg:w-1/2 block mx-auto mb-20">
+          <StaticImage
+            src="../../images/circular-diagram_business-model.png"
+            alt="Diagram representing a sustainable business model"
+            className=""
+          />
+        </div>
         <Heading level="h4" className="uppercase pb-10" colour="black">
           {content.stakeholderValue.heading}
         </Heading>

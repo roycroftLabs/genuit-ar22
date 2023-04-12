@@ -28,6 +28,7 @@ function Download({ label, fileName, theme = "light", className }) {
   return (
     <a
       href={getFile(fileName)}
+      download={label}
       target="_blank"
       rel="noreferrer"
       className={`flex max-w-[200px] cursor-pointer ${
