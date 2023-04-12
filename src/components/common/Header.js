@@ -11,7 +11,7 @@ const Header = ({ content }) => (
       <Link to="/">
         <img alt="logo" src={Logo} className="h-[44px]" />
       </Link>
-      <Paragraph colour="white">{content.siteTitle}</Paragraph>
+      <Paragraph colour="white">{content.title}</Paragraph>
     </div>
   </header>
 )
