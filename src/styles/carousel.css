@@ -10,3 +10,19 @@
 .slick-slide div {
   height: 100%;
 }
+
+.slick-dots {
+  bottom: -40px;
+}
+
+.slick-dots li button:before {
+  content: "";
+  background-color: #93a0aa;
+  border-radius: 24px;
+  opacity: 1;
+}
+
+.slick-dots li.slick-active button:before {
+  background-color: #004996;
+  opacity: 1;
+}
