@@ -1,19 +1,32 @@
-.slick-track {
+/* Financial highlights carousel */
+.carousel-financial .slick-track {
   display: flex;
   gap: 1.5rem;
 }
 
-.slick-list {
-  display: flex;
+.carousel-financial .slick-list {
+  display: flex; /*  This is what makes all slide same height */
 }
 
-.slick-slide div {
+.carousel-financial .slick-slide div {
   height: 100%;
 }
 
-.slick-dots {
-  bottom: -40px;
+.carousel-financial .slick-slide div div div {
+  height: auto;
 }
+
+/*  Fader full wdith slider for Strategy section */
+.carousel-strategic .slick-track {
+  display: flex;
+  gap: 0;
+}
+
+.carousel-strategic .slick-slide .quote-wrapper {
+  height: auto;
+}
+
+/* DOTS */
 
 .slick-dots li button:before {
   content: "";
@@ -25,4 +38,21 @@
 .slick-dots li.slick-active button:before {
   background-color: #004996;
   opacity: 1;
+}
+@media (max-width: 767px) {
+  .slick-dots {
+    bottom: -30px;
+  }
+  .slick-dots li {
+    margin: 0 2px;
+  }
+  .slick-dots li button:before {
+    width: 16px;
+    height: 16px;
+  }
+}
+@media (min-width: 768px) {
+  .slick-dots {
+    bottom: -40px;
+  }
 }

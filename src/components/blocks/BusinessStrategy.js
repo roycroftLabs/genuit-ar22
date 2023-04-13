@@ -1,41 +1,24 @@
-import React, { useState } from "react"
+import React from "react"
 
 import Section from "../common/Section"
 import Download from "../common/Download"
 import Banner from "../common/Banner"
+import Carousel from "../common/Carousel"
 
 function BusinessStrategy({ content }) {
-  const [activeSlide, setActiveSlide] = useState(0)
-
   return (
     <>
       <Section
         heading={content.heading}
         subHeading={content.subHeading}
         fullWidth
+        className="carousel-noGaps carousel-strategic"
       >
-        <div className="relative w-full h-[450px] md:h-[550px] lg:h-[680px]">
+        <Carousel fade fullWidth>
           {content.slides.map((slide, i) => {
-            return (
-              <Banner
-                content={slide}
-                slider
-                hide={i !== activeSlide}
-                onClickForward={() =>
-                  activeSlide < content.slides.length - 1
-                    ? setActiveSlide(activeSlide + 1)
-                    : setActiveSlide(0)
-                }
-                onClickBack={() =>
-                  activeSlide === 0
-                    ? setActiveSlide(content.slides.length - 1)
-                    : setActiveSlide(activeSlide - 1)
-                }
-              />
-            )
+            return <Banner index={i} key={i} content={slide} slider />
           })}
-        </div>
-
+        </Carousel>
         <div className="container">
           <Download
             label={content.download.label}

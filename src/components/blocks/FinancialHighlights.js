@@ -64,7 +64,7 @@ const renderChart = name => {
 function FinancialHighlights({ content }) {
   return (
     <Section heading={content.heading}>
-      <div className="w-11/12 mx-auto">
+      <div className="w-11/12 mx-auto h-full carousel-financial">
         <Carousel>
           {content.slides.map((slide, index) => {
             return (
