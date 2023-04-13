@@ -6,13 +6,13 @@ import Seo from "../components/common/Seo"
 import Hero from "../components/blocks/Hero"
 import FinancialHighlights from "../components/blocks/FinancialHighlights"
 import InvestmentProposition from "../components/blocks/InvestmentProposition"
+import BuiltEnvironmentBanner from "../components/blocks/BuiltEnvironmentBanner"
 import BusinessModel from "../components/blocks/BusinessModel"
 import BusinessStrategy from "../components/blocks/BusinessStrategy"
 import LeadershipStatements from "../components/blocks/LeadershipStatements"
 import OurPeople from "../components/blocks/OurPeople"
 
 import data from "../data/homepage.json"
-import BuiltEnvironmentBanner from "../components/blocks/BuiltEnvironmentBanner"
 
 const Homepage = () => (
   <Layout>

@@ -13,13 +13,43 @@
         "heading": "Revenue",
         "unit": "£m",
         "figure": "£622.2m",
-        "yearOnYear": "+4.7%"
+        "yearOnYear": "+4.7%",
+        "chart": "revenue"
       },
       {
         "heading": "Underlying Operating Profit",
         "unit": "£m",
         "figure": "£98.2m",
-        "yearOnYear": "+3.0%"
+        "yearOnYear": "+3.0%",
+        "chart": "operating-profit"
+      },
+      {
+        "heading": "Underlying Basic Earnings per share",
+        "unit": "pence per share (pps)",
+        "figure": "30.8pps",
+        "yearOnYear": "+0.7%",
+        "chart": "basic-earnings"
+      },
+      {
+        "heading": "Profit before tax",
+        "unit": "£m",
+        "figure": "£45.4m",
+        "yearOnYear": "-27.8%",
+        "chart": "profit-before-tax"
+      },
+      {
+        "heading": "Underlying cash generated from operations",
+        "unit": "£m",
+        "figure": "£62.6m",
+        "yearOnYear": "+9.4%",
+        "chart": "cash-generated"
+      },
+      {
+        "heading": "Increase in net debt",
+        "unit": "£m",
+        "figure": "£166.2m",
+        "yearOnYear": "+0.3%",
+        "chart": "debt-increase"
       }
     ]
   },
