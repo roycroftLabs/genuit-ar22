@@ -11,7 +11,7 @@ function Hero({ content }) {
         <Heading
           level="h1"
           colour="white"
-          className="row-start-2 w-4/5 md:w-2/5 lg:w-1/3 z-10 relative self-end"
+          className="row-start-2 w-4/5 md:w-2/5 lg:w-1/3 4xl:w-1/4 z-10 relative self-end"
         >
           {content.heading}
         </Heading>
@@ -49,11 +49,14 @@ function Hero({ content }) {
       sm:top-[-80px] sm:right-[-50px] 
       md:top-[-90px] md:right-[-170px] 
       lg:top-[-222px] lg:right-[-110px] 
+      3xl:top-[-150px] 3xl:right-[-130px] 
+      4xl:top-[-70px] 4xl:right-[-130px] 
       w-[380px] h-[380px] 
       sm:w-[420px] sm:h-[420px] 
       md:w-[500px] md:h-[500px] 
       lg:w-[620px] lg:h-[620px] 
-      3xl:w-[620px] 3xl:h-[620px] mix-blend-hard-light rotate-45"
+      3xl:w-[800px] 3xl:h-[800px]
+      4xl:w-[850px] 4xl:h-[850px] mix-blend-hard-light rotate-45"
       >
         <rect fill="#230A59" width="620" height="620" />
       </svg>
