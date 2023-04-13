@@ -6,60 +6,53 @@ import Download from "../common/Download"
 
 function Hero({ content }) {
   return (
-    <section className="relative w-full h-[810px] 3xl:h-[950px] bg-royal-blue bg-hero bg-center bg-no-repeat bg-cover overflow-hidden mb-20">
+    <section className=" w-full h-[810px] 3xl:h-[950px] bg-royal-blue bg-hero bg-center bg-no-repeat bg-cover overflow-hidden mb-20">
       <div className="container grid grid-rows-2 h-full py-10">
-        <Heading
-          level="h1"
-          colour="white"
-          className="row-start-2 w-4/5 md:w-2/5 lg:w-1/3 4xl:w-1/4 z-10 relative self-end"
-        >
-          {content.heading}
-        </Heading>
-        <div className="row-start-1 w-2/5 sm:w-4/12 lg:w-3/12 xl:w-2/12 flex flex-col items-end justify-self-end pt-20 z-10">
+        <div className="relative row-start-2 w-2/3 md:w-2/5 lg:w-1/3 4xl:w-1/4 self-end">
+          <Heading level="h1" colour="white" className="relative z-10">
+            {content.heading}
+          </Heading>
+          <svg
+            className="absolute -z-1 mix-blend-hard-light rotate-45
+      w-[360px] h-[360px] 
+      md:w-[600px] md:h-[600px] 
+      lg:w-[720px] lg:h-[720px] 
+      3xl:w-[950px] 3xl:h-[950px]
+      
+      bottom-[-140px] left-[-80px] 
+      md:bottom-[-310px] md:left-[-220px] 
+      lg:bottom-[-320px] lg:left-[-290px] 
+      3xl:bottom-[-540px] 3xl:left-[-290px] 
+      "
+          >
+            <rect fill="#004996" width="720" height="720" />
+          </svg>
+        </div>
+        <div className="relative row-start-1 w-2/5 sm:w-4/12 lg:w-3/12 xl:w-2/12 flex flex-col items-end justify-self-end pt-20">
           <StaticImage
             src="../../images/thumbnails/report-download-thumbnail.jpg"
             alt="Cover of Annual Report"
-            className="mb-3"
+            className="mb-3 z-10"
           />
           <Download
             label={content.download.label}
             fileName={content.download.name}
             theme="light"
+            className="z-10"
           />
+          <svg
+            className="absolute -z-1 mix-blend-hard-light rotate-45
+              top-[-30px] right-[-140px] 
+              md:top-[-232px] md:right-[-230px] 
+              3xl:top-[-232px] 3xl:right-[-200px] 
+              w-[380px] h-[380px] 
+              md:w-[560px] md:h-[560px]
+              3xl:w-[760px] 3xl:h-[760px]"
+          >
+            <rect fill="#230A59" width="620" height="620" />
+          </svg>
         </div>
       </div>
-      <svg
-        className="absolute 
-      bottom-[-60px] left-[-100px] 
-      sm:bottom-[-140px] sm:left-[-100px] 
-      md:bottom-[-200px] md:left-[-100px] 
-      lg:bottom-[-270px] lg:left-[-170px] 
-      3xl:bottom-[-450px] 3xl:left-[-170px] 
-      w-[360px] h-[360px] 
-      sm:w-[450px] sm:h-[450px] 
-      md:w-[520px] md:h-[520px] 
-      lg:w-[720px] lg:h-[720px] 
-      3xl:w-[900px] 3xl:h-[900px] mix-blend-hard-light rotate-45"
-      >
-        <rect fill="#004996" width="720" height="720" />
-      </svg>
-      <svg
-        className="absolute 
-      top-[-30px] right-[-140px] 
-      sm:top-[-80px] sm:right-[-50px] 
-      md:top-[-90px] md:right-[-170px] 
-      lg:top-[-222px] lg:right-[-110px] 
-      3xl:top-[-150px] 3xl:right-[-130px] 
-      4xl:top-[-70px] 4xl:right-[-130px] 
-      w-[380px] h-[380px] 
-      sm:w-[420px] sm:h-[420px] 
-      md:w-[500px] md:h-[500px] 
-      lg:w-[620px] lg:h-[620px] 
-      3xl:w-[800px] 3xl:h-[800px]
-      4xl:w-[850px] 4xl:h-[850px] mix-blend-hard-light rotate-45"
-      >
-        <rect fill="#230A59" width="620" height="620" />
-      </svg>
     </section>
   )
 }
