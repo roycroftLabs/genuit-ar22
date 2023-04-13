@@ -6,7 +6,7 @@ import Download from "../common/Download"
 
 function Hero({ content }) {
   return (
-    <section className="relative w-full h-[810px] bg-royal-blue bg-hero bg-center bg-no-repeat bg-cover overflow-hidden mb-20">
+    <section className="relative w-full h-[810px] 3xl:h-[950px] bg-royal-blue bg-hero bg-center bg-no-repeat bg-cover overflow-hidden mb-20">
       <div className="container grid grid-rows-2 h-full py-10">
         <Heading
           level="h1"
@@ -34,10 +34,12 @@ function Hero({ content }) {
       sm:bottom-[-140px] sm:left-[-100px] 
       md:bottom-[-200px] md:left-[-100px] 
       lg:bottom-[-270px] lg:left-[-170px] 
+      3xl:bottom-[-450px] 3xl:left-[-170px] 
       w-[360px] h-[360px] 
       sm:w-[450px] sm:h-[450px] 
       md:w-[520px] md:h-[520px] 
-      lg:w-[720px] lg:h-[720px] mix-blend-hard-light rotate-45"
+      lg:w-[720px] lg:h-[720px] 
+      3xl:w-[900px] 3xl:h-[900px] mix-blend-hard-light rotate-45"
       >
         <rect fill="#004996" width="720" height="720" />
       </svg>
@@ -50,7 +52,8 @@ function Hero({ content }) {
       w-[380px] h-[380px] 
       sm:w-[420px] sm:h-[420px] 
       md:w-[500px] md:h-[500px] 
-      lg:w-[620px] lg:h-[620px] mix-blend-hard-light rotate-45"
+      lg:w-[620px] lg:h-[620px] 
+      3xl:w-[620px] 3xl:h-[620px] mix-blend-hard-light rotate-45"
       >
         <rect fill="#230A59" width="620" height="620" />
       </svg>
