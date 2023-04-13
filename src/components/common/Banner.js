@@ -104,7 +104,7 @@ function Banner({
                     <Heading
                       level="h4"
                       colour="white"
-                      className="w-full sm:w-10/12 lg:w-6/12 mb-4"
+                      className="w-full sm:w-10/12 lg:w-8/12 xl:w-6/12 mb-4"
                     >
                       {content.quote.statement}
                     </Heading>
