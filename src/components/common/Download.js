@@ -31,7 +31,7 @@ function Download({ label, fileName, theme = "light", className }) {
       download={label}
       target="_blank"
       rel="noreferrer"
-      className={`flex max-w-[200px] cursor-pointer ${
+      className={`flex max-w-[190px] md:max-w-[200px] cursor-pointer ${
         className ? className : ""
       }`}
     >

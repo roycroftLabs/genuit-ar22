@@ -21,7 +21,7 @@ function Section({
     >
       {heading && (
         <div className="container flex flex-col items-center">
-          <div className="md:w-8/12 pb-10 sm:pb-12 md:pb-14 lg:pb-20">
+          <div className="md:w-10/12 lg:w-8/12 pb-10 sm:pb-12 md:pb-14 lg:pb-20">
             <Heading
               level="h3"
               colour="black"
