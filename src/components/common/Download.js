@@ -11,7 +11,7 @@ const getFile = name => {
     case "full-report":
     default:
       return samplePDF
-    case "strategic":
+    case "strategy":
       return samplePDF
     case "governance":
       return samplePDF
@@ -71,7 +71,7 @@ export default Download
 Download.propTypes = {
   fileName: PropTypes.oneOf([
     "full-report",
-    "strategic",
+    "strategy",
     "governance",
     "financial",
     "remuneration",
