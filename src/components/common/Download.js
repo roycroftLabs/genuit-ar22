@@ -74,5 +74,6 @@ Download.propTypes = {
     "strategic",
     "governance",
     "financial",
+    "remuneration",
   ]),
 }

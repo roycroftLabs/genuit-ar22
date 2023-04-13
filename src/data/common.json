@@ -28,6 +28,10 @@
           {
             "title": "Financial Statements PDF",
             "name": "financial"
+          },
+          {
+            "title": "Remuneration Report PDF",
+            "name": "remuneration"
           }
         ]
       }
