@@ -4,7 +4,7 @@ import cx from "classnames"
 
 import Paragraph from "../common/Paragraph"
 
-import FullReport from "../../documents/Genuit_AR22_full-interactive.pdf"
+import FullReport from "../../documents/Genuit_AR22_full-report.pdf"
 import StrategyReport from "../../documents/Genuit_AR22_Our-Strategy.pdf"
 import GovernanceReport from "../../documents/Genuit_AR22_Governance_report.pdf"
 import FinancialReport from "../../documents/Genuit_AR22_Financial_report.pdf"
