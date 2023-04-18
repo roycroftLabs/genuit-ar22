@@ -6,9 +6,9 @@ import Paragraph from "../common/Paragraph"
 
 import FullReport from "../../documents/Genuit_AR22_interactive.pdf"
 import StrategyReport from "../../documents/Genuit_AR22_Strategy.pdf"
-import GovernanceReport from "../../documents/Genuit_AR22_Governance.pdf"
-import FinancialReport from "../../documents/Genuit_AR22_Financials.pdf"
-import RemunerationReport from "../../documents/Genuit_AR22_Remuneration.pdf"
+import GovernanceReport from "../../documents/Genuit_AR22_Governance_L.pdf"
+import FinancialReport from "../../documents/Genuit_AR22_Financials_L.pdf"
+import RemunerationReport from "../../documents/Genuit_AR22_Remuneration_L.pdf"
 import BusinessModel from "../../documents/Genuit_AR22_Business_model.pdf"
 import ChairStatement from "../../documents/Genuit_AR22_Chair_statement.pdf"
 import CEOStatement from "../../documents/Genuit_AR22_CEO_statement .pdf"
@@ -92,5 +92,8 @@ Download.propTypes = {
     "governance",
     "financial",
     "remuneration",
+    "business-model",
+    "chair-statement",
+    "ceo-statement",
   ]),
 }
