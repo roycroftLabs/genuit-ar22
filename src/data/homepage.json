@@ -207,8 +207,8 @@
         "jobTitle": "Chief Financial Officer",
         "download": {
           "label": "Download Financial review",
-          "name": "financial",
-          "fullName": "Genuit AR22 - Financial report"
+          "name": "cfo-review",
+          "fullName": "Genuit AR22 - Financial review"
         }
       }
     ]

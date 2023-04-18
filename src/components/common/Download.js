@@ -5,13 +5,14 @@ import cx from "classnames"
 import Paragraph from "../common/Paragraph"
 
 import FullReport from "../../documents/Genuit_AR22_full-interactive.pdf"
-import StrategyReport from "../../documents/Genuit_AR22_Strategy.pdf"
+import StrategyReport from "../../documents/Genuit_AR22_Our-Strategy.pdf"
 import GovernanceReport from "../../documents/Genuit_AR22_Governance_report.pdf"
 import FinancialReport from "../../documents/Genuit_AR22_Financial_report.pdf"
 import RemunerationReport from "../../documents/Genuit_AR22_Remuneration_report.pdf"
 import BusinessModel from "../../documents/Genuit_AR22_Business_model.pdf"
 import ChairStatement from "../../documents/Genuit_AR22_Chair_statement.pdf"
-import CEOStatement from "../../documents/Genuit_AR22_CEO_statement .pdf"
+import CEOStatement from "../../documents/Genuit_AR22_CEO_statement.pdf"
+import CFOReview from "../../documents/Genuit_AR22_CFO_report.pdf"
 
 const getFile = name => {
   switch (name) {
@@ -32,6 +33,8 @@ const getFile = name => {
       return ChairStatement
     case "ceo-statement":
       return CEOStatement
+    case "cfo-review":
+      return CFOReview
   }
 }
 
@@ -95,5 +98,6 @@ Download.propTypes = {
     "business-model",
     "chair-statement",
     "ceo-statement",
+    "cfo-review",
   ]),
 }
