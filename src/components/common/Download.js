@@ -4,23 +4,34 @@ import cx from "classnames"
 
 import Paragraph from "../common/Paragraph"
 
-import samplePDF from "../../documents/sample-download.pdf"
+import FullReport from "../../documents/Genuit_AR22_interactive.pdf"
+import StrategyReport from "../../documents/Genuit_AR22_Strategy.pdf"
+import GovernanceReport from "../../documents/Genuit_AR22_Governance.pdf"
+import FinancialReport from "../../documents/Genuit_AR22_Financials.pdf"
+import RemunerationReport from "../../documents/Genuit_AR22_Remuneration.pdf"
+import BusinessModel from "../../documents/Genuit_AR22_Business_model.pdf"
+import ChairStatement from "../../documents/Genuit_AR22_Chairs_statement.pdf"
+import CEOStatement from "../../documents/Genuit_AR22_CEO_statement .pdf"
 
 const getFile = name => {
   switch (name) {
     case "full-report":
     default:
-      return samplePDF
+      return FullReport
     case "strategy":
-      return samplePDF
+      return StrategyReport
     case "governance":
-      return samplePDF
+      return GovernanceReport
     case "financial":
-      return samplePDF
+      return FinancialReport
+    case "remuneration":
+      return RemunerationReport
+    case "business-model":
+      return BusinessModel
     case "chair-statement":
-      return samplePDF
+      return ChairStatement
     case "ceo-statement":
-      return samplePDF
+      return CEOStatement
   }
 }
 
@@ -28,7 +39,6 @@ function Download({ label, fileName, theme = "light", className }) {
   return (
     <a
       href={getFile(fileName)}
-      download={label}
       target="_blank"
       rel="noreferrer"
       className={`flex max-w-[190px] md:max-w-[200px] cursor-pointer ${

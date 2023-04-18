@@ -129,7 +129,7 @@
     },
     "download": {
       "label": "Download full Business model",
-      "name": "strategy"
+      "name": "business-model"
     }
   },
   "businessStrategy": {
