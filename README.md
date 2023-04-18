@@ -1,6 +1,8 @@
 ### Genuit Annual Review 2022
 
-Built by Roycroft Labs on behalf of Luminous
+This is a one-page site for Genuit Group's Annual Report 2022, including PDF downloads of all reports.
+
+This site is built using Gatsby and Tailwind for styling.
 
 ## 💫 Set up
 
@@ -19,13 +21,11 @@ Your site is now running at `http://localhost:8000`
 
 ## 🧐 What's inside?
 
-This site is built using Gatsby and Tailwind for styling.
-
-Here's a quick look at the top-level files and directories you'll find inside:
+Overview of top-level files and directories:
 
     .
     ├── node_modules
-    ├── src // this is where the bulk of our code lives
+    ├── src // this is where the bulk of the code lives
     ├── .gitignore
     ├── gatsby-browser.js
     ├── gatsby-config.js
@@ -41,6 +41,7 @@ Here's a quick look at the top-level files and directories you'll find inside:
     ├── components      // All shared and block-specific components live here
     ├── data            // All the site's content lives here in JSON format
     ├── images          // All images for the project
+    ├── documents       // All PDFs for download
     ├── pages           // the only page for this microsite, plus a 404 template.
     ├── styles          // Some custom styles not handled by Tailwind such as complex CSS for SVG shapes and 3rd-party CSS for carousels
 
