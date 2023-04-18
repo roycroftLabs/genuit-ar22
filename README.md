@@ -4,24 +4,24 @@ Built by Roycroft Labs on behalf of Luminous
 
 ## 💫 Set up
 
-    Navigate to the project's directory and install it.
+This project uses Node version `18.15.0`
 
-    ```shell
+Navigate to the project's directory and install it.
+
     cd genuit-ar22/
     npm install
-    ```
 
-    Then run it.
+Then run it.
 
-    ```shell
     npm start
-    ```
 
-    Your site is now running at `http://localhost:8000`
+Your site is now running at `http://localhost:8000`
 
 ## 🧐 What's inside?
 
-A quick look at the top-level files and directories you'll see in a typical Gatsby project.
+This site is built using Gatsby and Tailwind for styling.
+
+Here's a quick look at the top-level files and directories you'll find inside:
 
     .
     ├── node_modules
@@ -31,43 +31,35 @@ A quick look at the top-level files and directories you'll see in a typical Gats
     ├── gatsby-config.js
     ├── gatsby-node.js
     ├── gatsby-ssr.js
+    ├── tailwind.config.js
     ├── package.json
     └── README.md
 
-1.  **`/node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages) are automatically installed.
+**`/src`**: This directory will contain all of the code related to what you will see on the front-end of the site.
 
-2.  **`/src`**: This directory will contain all of the code related to what you will see on the front-end of your site (what you see in the browser) such as your site header or a page template. `src` is a convention for “source code”.
+    src
+    ├── components      // All shared and block-specific components live here
+    ├── data            // All the site's content lives here in JSON format
+    ├── images          // All images for the project
+    ├── pages           // the only page for this microsite, plus a 404 template.
+    ├── styles          // Some custom styles not handled by Tailwind such as complex CSS for SVG shapes and 3rd-party CSS for carousels
 
-3.  **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
+## 🚀 Deploy
 
-4.  **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-browser/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
+Generate production-ready code:
 
-5.  **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you’d like to include, etc. (Check out the [config docs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-config/) for more detail).
+    npm build
 
-6.  **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby Node APIs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-node/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
+When deploying, make sure you are using the correct version of Node (see 'set up' above).
 
-7.  **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-ssr/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
+[Build, Deploy, and Host On Netlify](https://netlify.com)
 
-8.  **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
+The fastest way to combine your favorite tools and APIs to build the fastest sites, stores, and apps for the web. And also the best place to build, deploy, and host your Gatsby sites.
 
-9.  **`README.md`**: A text file containing useful reference information about your project.
-
-## 🎓 Learning Gatsby
+## 🎓 If you're not familiar with Gatsby
 
 Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.com/). Here are some places to start:
 
 - **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.com/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
 
 - **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.com/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
-
-## 🚀 Deploy
-
-Generate production-ready code:
-
-    ```shell
-    npm build
-    ```
-
-[Build, Deploy, and Host On Netlify](https://netlify.com)
-
-The fastest way to combine your favorite tools and APIs to build the fastest sites, stores, and apps for the web. And also the best place to build, deploy, and host your Gatsby sites.
