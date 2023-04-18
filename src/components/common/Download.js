@@ -5,7 +5,8 @@ import cx from "classnames"
 import Paragraph from "../common/Paragraph"
 
 import FullReport from "../../documents/Genuit_AR22_full-report.pdf"
-import StrategyReport from "../../documents/Genuit_AR22_Our-Strategy.pdf"
+import StrategyReport from "../../documents/Genuit_AR22_Strategic_report.pdf"
+import OurStrategy from "../../documents/Genuit_AR22_Our-Strategy.pdf"
 import GovernanceReport from "../../documents/Genuit_AR22_Governance_report.pdf"
 import FinancialReport from "../../documents/Genuit_AR22_Financial_statements.pdf"
 import RemunerationReport from "../../documents/Genuit_AR22_Remuneration_report.pdf"
@@ -19,8 +20,10 @@ const getFile = name => {
     case "full-report":
     default:
       return FullReport
-    case "strategy":
+    case "full-strategy":
       return StrategyReport
+    case "our-strategy":
+      return OurStrategy
     case "governance":
       return GovernanceReport
     case "financial":
@@ -91,7 +94,8 @@ export default Download
 Download.propTypes = {
   fileName: PropTypes.oneOf([
     "full-report",
-    "strategy",
+    "full-strategy",
+    "our-strategy",
     "governance",
     "financial",
     "remuneration",
