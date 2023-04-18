@@ -54,5 +54,22 @@ module.exports = {
       },
     },
     "gatsby-plugin-postcss",
+    {
+      resolve: "gatsby-plugin-google-tagmanager",
+      options: {
+        id: "GTM-NT8KZ22",
+        // datalayer to be set before GTM is loaded
+        // should be an object or a function that is executed in the browser
+        //
+        // Defaults to null
+        defaultDataLayer: { platform: "gatsby" },
+
+        // Name of the event that is triggered
+        // on every Gatsby route change.
+        routeChangeEventName: "NEW_PAGE_LOAD",
+        // Defaults to false
+        enableWebVitalsTracking: true,
+      },
+    },
   ],
 }
