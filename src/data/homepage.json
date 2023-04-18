@@ -3,7 +3,8 @@
     "heading": "A culture of sustainable innovation",
     "download": {
       "label": "Download Annual Report 2022 PDF",
-      "name": "full-report"
+      "name": "full-report",
+      "fullName": "Genuit Annual Report and Accounts 2022"
     }
   },
   "financialHighlights": {
@@ -129,7 +130,8 @@
     },
     "download": {
       "label": "Download full Business model",
-      "name": "business-model"
+      "name": "business-model",
+      "fullName": "Genuit AR22 - Business model"
     }
   },
   "businessStrategy": {
@@ -166,7 +168,8 @@
     ],
     "download": {
       "label": "Download Our Strategy",
-      "name": "strategy"
+      "name": "strategy",
+      "fullName": "Genuit AR22 - Strategy report"
     }
   },
   "leadershipStatements": {
@@ -180,7 +183,8 @@
         "jobTitle": "Independent Non-Executive Chair",
         "download": {
           "label": "Download Chair's statement",
-          "name": "chair-statement"
+          "name": "chair-statement",
+          "fullName": "Genuit AR22 - Chair statement"
         }
       },
       {
@@ -191,7 +195,8 @@
         "jobTitle": "Chief Executive Officer",
         "download": {
           "label": "Download CEO's statement",
-          "name": "ceo-statement"
+          "name": "ceo-statement",
+          "fullName": "Genuit AR22 - CEO statement"
         }
       },
       {
@@ -202,7 +207,8 @@
         "jobTitle": "Chief Financial Officer",
         "download": {
           "label": "Download Financial review",
-          "name": "financial"
+          "name": "financial",
+          "fullName": "Genuit AR22 - Financial report"
         }
       }
     ]

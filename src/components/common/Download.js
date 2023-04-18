@@ -10,7 +10,7 @@ import GovernanceReport from "../../documents/Genuit_AR22_Governance.pdf"
 import FinancialReport from "../../documents/Genuit_AR22_Financials.pdf"
 import RemunerationReport from "../../documents/Genuit_AR22_Remuneration.pdf"
 import BusinessModel from "../../documents/Genuit_AR22_Business_model.pdf"
-import ChairStatement from "../../documents/Genuit_AR22_Chairs_statement.pdf"
+import ChairStatement from "../../documents/Genuit_AR22_Chair_statement.pdf"
 import CEOStatement from "../../documents/Genuit_AR22_CEO_statement .pdf"
 
 const getFile = name => {
@@ -35,10 +35,17 @@ const getFile = name => {
   }
 }
 
-function Download({ label, fileName, theme = "light", className }) {
+function Download({
+  label,
+  fileName,
+  dowloadName,
+  theme = "light",
+  className,
+}) {
   return (
     <a
       href={getFile(fileName)}
+      download={dowloadName}
       target="_blank"
       rel="noreferrer"
       className={`flex max-w-[190px] md:max-w-[200px] cursor-pointer ${

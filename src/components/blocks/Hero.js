@@ -37,6 +37,7 @@ function Hero({ content }) {
           <Download
             label={content.download.label}
             fileName={content.download.name}
+            downloadName={content.download.fullName}
             theme="light"
             className="z-10"
           />

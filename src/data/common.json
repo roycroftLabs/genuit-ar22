@@ -10,7 +10,8 @@
         "files": [
           {
             "title": "Annual Report & Accounts 2022 PDF",
-            "name": "full-report"
+            "name": "full-report",
+            "fullName": "Genuit Annual Report and Accounts 2022"
           }
         ]
       },
@@ -19,19 +20,23 @@
         "files": [
           {
             "title": "Strategic Report PDF",
-            "name": "strategy"
+            "name": "strategy",
+            "fullName": "Genuit AR22 - Strategy report"
           },
           {
             "title": "Corporate Governance PDF",
-            "name": "governance"
+            "name": "governance",
+            "fullName": "Genuit AR22 - Governance report"
           },
           {
             "title": "Remuneration Report PDF",
-            "name": "remuneration"
+            "name": "remuneration",
+            "fullName": "Genuit AR22 - Remuneration report"
           },
           {
             "title": "Financial Statements PDF",
-            "name": "financial"
+            "name": "financial",
+            "fullName": "Genuit AR22 - Financial report"
           }
         ]
       }

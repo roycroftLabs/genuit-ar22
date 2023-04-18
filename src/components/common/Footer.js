@@ -35,6 +35,7 @@ function Footer({ content }) {
                           <Download
                             label={file.title}
                             fileName={file.name}
+                            downloadName={file.fullName}
                             className="mb-4"
                           />
                         )

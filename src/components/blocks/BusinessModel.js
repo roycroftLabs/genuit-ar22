@@ -78,6 +78,7 @@ function BusinessModel({ content }) {
           <Download
             label={content.download.label}
             fileName={content.download.name}
+            downloadName={content.download.fullName}
             theme="dark"
           />
         </div>

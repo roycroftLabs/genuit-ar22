@@ -68,6 +68,7 @@ function LeadershipStatements({ content }) {
                 <Download
                   label={statement.download.label}
                   fileName={statement.download.name}
+                  downloadName={statement.download.fullName}
                   theme="dark"
                 />
               </div>

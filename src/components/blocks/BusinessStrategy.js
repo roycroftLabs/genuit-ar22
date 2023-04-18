@@ -23,6 +23,7 @@ function BusinessStrategy({ content }) {
           <Download
             label={content.download.label}
             fileName={content.download.name}
+            downloadName={content.download.fullName}
             theme="dark"
             className="mt-8"
           />
