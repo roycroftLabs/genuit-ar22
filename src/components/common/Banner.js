@@ -9,6 +9,7 @@ function Banner({
   slider = false,
   hide,
   bgOnly = false,
+  splitHeading = false,
   fullHeight = false,
   children,
 }) {
@@ -39,7 +40,7 @@ function Banner({
                     {content.eyebrow}
                   </Heading>
                 )}
-                {content.heading && (
+                {content.heading && !splitHeading && (
                   <Heading
                     level="h1"
                     colour="white"
@@ -48,7 +49,19 @@ function Banner({
                     {content.heading}
                   </Heading>
                 )}
+                {content.heading && splitHeading && (
+                  <Heading
+                    level="h1"
+                    colour="white"
+                    className="w-full sm:w-10/12 md:w-8/12 lg:w-6/12 xl:w-5/12"
+                  >
+                    <span
+                      dangerouslySetInnerHTML={{ __html: content.heading }}
+                    />
+                  </Heading>
+                )}
               </div>
+
               <div className="flex flex-col justify-end">
                 {content.subHeading && (
                   <Heading

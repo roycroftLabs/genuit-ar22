@@ -10,7 +10,7 @@ function OurPeople({ content }) {
       fullWidth
       noBottomSpace
     >
-      <Banner content={content.banner} />
+      <Banner content={content.banner} splitHeading />
     </Section>
   )
 }
