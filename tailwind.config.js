@@ -108,6 +108,10 @@ module.exports = {
     "xl:row-start-3",
     "row-start-4",
     "row-start-5",
+    "w-16",
+    "w-10",
+    "h-16",
+    "h-10",
   ],
 }
 

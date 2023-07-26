@@ -2,16 +2,25 @@ import React from "react"
 import cx from "classnames"
 import Slider from "react-slick"
 
-const ArrowNext = ({ onClick, fullWidth }) => {
+const ArrowNext = ({ onClick, fullWidth, highlightArrows }) => {
   return (
     <div
       className={cx(
-        "hidden lg:block absolute top-[50%] -translate-y-2/4 text-royal-blue hover:text-orange z-20 transition-colors cursor-pointer",
-        fullWidth ? "right-0" : "-right-20"
+        "hidden lg:block absolute top-[50%] -translate-y-2/4  z-20 transition-colors cursor-pointer",
+        fullWidth ? "right-0" : "-right-20",
+        highlightArrows
+          ? "text-orange hover:text-royal-blue"
+          : "text-royal-blue hover:text-orange"
       )}
       onClick={onClick}
     >
-      <svg width="41" height="40" xmlns="http://www.w3.org/2000/svg">
+      <svg
+        viewBox="0 0 40 40"
+        width="40"
+        height="40"
+        xmlns="http://www.w3.org/2000/svg"
+        className={cx(highlightArrows ? "w-16 h-16" : "w-10 h-10")}
+      >
         <g fill="none" fill-rule="evenodd">
           <path fill="currentColor" d="M0 0h41v40H0z" />
           <path
@@ -24,16 +33,25 @@ const ArrowNext = ({ onClick, fullWidth }) => {
     </div>
   )
 }
-const ArrowBack = ({ onClick, fullWidth }) => {
+const ArrowBack = ({ onClick, fullWidth, highlightArrows }) => {
   return (
     <div
       className={cx(
-        "hidden lg:block absolute top-[50%] -translate-y-2/4 text-royal-blue hover:text-orange z-20 transition-colors cursor-pointer",
-        fullWidth ? "left-0" : "-left-20"
+        "hidden lg:block absolute top-[50%] -translate-y-2/4 z-20 transition-colors cursor-pointer",
+        fullWidth ? "left-0" : "-left-20",
+        highlightArrows
+          ? "text-orange hover:text-royal-blue"
+          : "text-royal-blue hover:text-orange"
       )}
       onClick={onClick}
     >
-      <svg width="40" height="40" xmlns="http://www.w3.org/2000/svg">
+      <svg
+        viewBox="0 0 40 40"
+        width="40"
+        height="40"
+        xmlns="http://www.w3.org/2000/svg"
+        className={cx(highlightArrows ? "w-16 h-16" : "w-10 h-10")}
+      >
         <g fill="none" fill-rule="evenodd">
           <path fill="currentColor" d="M0 0h40v40H0z" />
           <path
@@ -46,7 +64,12 @@ const ArrowBack = ({ onClick, fullWidth }) => {
     </div>
   )
 }
-function Carousel({ children, fade = false, fullWidth = false }) {
+function Carousel({
+  children,
+  fade = false,
+  fullWidth = false,
+  highlightArrows = false,
+}) {
   const settings = {
     dots: true,
     infinite: true,
@@ -64,8 +87,12 @@ function Carousel({ children, fade = false, fullWidth = false }) {
         },
       },
     ],
-    nextArrow: <ArrowNext fullWidth={fullWidth} />,
-    prevArrow: <ArrowBack fullWidth={fullWidth} />,
+    nextArrow: (
+      <ArrowNext fullWidth={fullWidth} highlightArrows={highlightArrows} />
+    ),
+    prevArrow: (
+      <ArrowBack fullWidth={fullWidth} highlightArrows={highlightArrows} />
+    ),
   }
 
   return <Slider {...settings}>{children}</Slider>
