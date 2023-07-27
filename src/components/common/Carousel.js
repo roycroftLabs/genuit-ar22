@@ -69,6 +69,7 @@ function Carousel({
   fade = false,
   fullWidth = false,
   highlightArrows = false,
+  autoplay = false,
 }) {
   const settings = {
     dots: true,
@@ -77,6 +78,8 @@ function Carousel({
     slidesToShow: fade ? 1 : 2,
     slidesToScroll: 1,
     fade: fade,
+    autoplay: autoplay,
+    autoplaySpeed: 5000,
     adaptiveHeight: false,
     responsive: [
       {

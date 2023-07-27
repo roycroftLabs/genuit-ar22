@@ -14,7 +14,7 @@ function BusinessStrategy({ content }) {
         fullWidth
         className="carousel-noGaps carousel-strategic"
       >
-        <Carousel fade fullWidth highlightArrows>
+        <Carousel fade fullWidth highlightArrows autoplay>
           {content.slides.map((slide, i) => {
             return <Banner index={i} key={i} content={slide} slider />
           })}
