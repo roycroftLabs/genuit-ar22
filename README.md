@@ -49,7 +49,10 @@ Overview of top-level files and directories:
 
 Generate production-ready code:
 
+    npm install
     npm run build
+
+You can then run `npm run serve` to see the production version locally before deploying.
 
 When deploying, make sure you are using the correct version of Node (see 'set up' above).
 
